@@ -1,0 +1,18 @@
+TITRE
+J'ai pas assez d'argent pour louer un jet ski
+
+DESCRIPTION
+J'avais choisi le mien, celui aux couleurs de la France. Sauf qu'il faut payer. Quelqu'un sait ce que c'est, BugMi ?
+
+HASHTAGS
+#gta6jetski #gta6argent #gameplayfr #gta6 #gta6gameplay #vicecity #gta6fr #gaming #rockstargames #gtavi
+
+CTA DE FIN (incrusté)
+Épisode complet sur la chaîne
+
+--- technique ---
+source      : input/source.mp4  572.3s -> 615.1s
+durée       : 42.8s
+format      : 1080x1920, 30 fps, H.264 + AAC, -14 LUFS
+hook        : J'ai pas assez d'argent pour le jet ski
+plateformes : TikTok / YouTube Shorts / Instagram Reels

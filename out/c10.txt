@@ -1,0 +1,18 @@
+TITRE
+La police m'a eu sur la plage de GTA 6
+
+DESCRIPTION
+Trop tard pour me rendre. Fuite dans l'eau, bateau de police derrière moi... et le plan final sur Vice Beach est magnifique. Vous auriez fait quoi à ma place ?
+
+HASHTAGS
+#gta6police #viceBeach #gameplayfr #gta6 #gta6gameplay #vicecity #gta6fr #gaming #rockstargames #gtavi
+
+CTA DE FIN (incrusté)
+Épisode complet sur la chaîne
+
+--- technique ---
+source      : input/source.mp4  928.9s -> 969.4s
+durée       : 40.5s
+format      : 1080x1920, 30 fps, H.264 + AAC, -14 LUFS
+hook        : Il est trop tard pour me rendre
+plateformes : TikTok / YouTube Shorts / Instagram Reels

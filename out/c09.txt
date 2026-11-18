@@ -1,0 +1,18 @@
+TITRE
+Les voitures de Vice City sont irréelles
+
+DESCRIPTION
+Une Lamborghini, une Corvette et un bar avec des danseuses en 30 secondes sur Ocean Drive. GTA 6 est une carte postale.
+
+HASHTAGS
+#gta6voiture #oceandrive #gta6cars #gta6 #gta6gameplay #vicecity #gta6fr #gaming #rockstargames #gtavi
+
+CTA DE FIN (incrusté)
+Abonne-toi pour la suite à Vice City
+
+--- technique ---
+source      : input/source.mp4  304.4s -> 325.7s
+durée       : 21.3s
+format      : 1080x1920, 30 fps, H.264 + AAC, -14 LUFS
+hook        : Les voitures de Vice City
+plateformes : TikTok / YouTube Shorts / Instagram Reels

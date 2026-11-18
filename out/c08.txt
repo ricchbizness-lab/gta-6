@@ -1,0 +1,18 @@
+TITRE
+Ce PNJ random est trop détaillé pour être random
+
+DESCRIPTION
+Regardez les détails de son visage. Soit Rockstar a poussé le niveau de détail très loin sur tous les PNJ, soit c'est un personnage de l'histoire. On sait jamais avec eux.
+
+HASHTAGS
+#gta6pnj #gta6details #rockstargames #gta6 #gta6gameplay #vicecity #gta6fr #gaming #rockstargames #gtavi
+
+CTA DE FIN (incrusté)
+Abonne-toi pour la suite à Vice City
+
+--- technique ---
+source      : input/source.mp4  713.3s -> 732.7s
+durée       : 19.4s
+format      : 1080x1920, 30 fps, H.264 + AAC, -14 LUFS
+hook        : Ce PNJ random est trop détaillé
+plateformes : TikTok / YouTube Shorts / Instagram Reels

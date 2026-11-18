@@ -1,0 +1,18 @@
+TITRE
+J'ai tué un PNJ avec un couteau sans faire exprès
+
+DESCRIPTION
+Je voulais juste tester les réactions des PNJ sur la plage de Vice City. Ça a mal tourné. La suite, je la laisse à votre imagination.
+
+HASHTAGS
+#gta6pnj #gtafail #gameplayfr #gta6 #gta6gameplay #vicecity #gta6fr #gaming #rockstargames #gtavi
+
+CTA DE FIN (incrusté)
+Épisode complet sur la chaîne
+
+--- technique ---
+source      : input/source.mp4  855.5s -> 900.6s
+durée       : 45.1s
+format      : 1080x1920, 30 fps, H.264 + AAC, -14 LUFS
+hook        : Un couteau dans les fesses
+plateformes : TikTok / YouTube Shorts / Instagram Reels

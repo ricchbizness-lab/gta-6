@@ -1,0 +1,117 @@
+[
+ {
+  "id": "c10",
+  "src": "clips/c10.mp4",
+  "captions": "captions/c10.json",
+  "durationInSeconds": 40.5,
+  "hook": "Il est trop tard pour me rendre",
+  "cta": "Épisode complet sur la chaîne",
+  "punches": [
+   4.3,
+   12.4,
+   19.1,
+   31.5
+  ],
+  "ctaStart": 37.3
+ },
+ {
+  "id": "c02",
+  "src": "clips/c02.mp4",
+  "captions": "captions/c02.json",
+  "durationInSeconds": 45.1,
+  "hook": "Un couteau dans les fesses",
+  "cta": "Épisode complet sur la chaîne",
+  "punches": [
+   0.5,
+   9.0,
+   23.5,
+   41.5
+  ],
+  "ctaStart": 41.9
+ },
+ {
+  "id": "c07",
+  "src": "clips/c07.mp4",
+  "captions": "captions/c07.json",
+  "durationInSeconds": 30.6,
+  "hook": "Est-ce que la bouée flotte vraiment ?",
+  "cta": "Épisode complet sur la chaîne",
+  "punches": [
+   0.5,
+   18.0,
+   26.8
+  ],
+  "ctaStart": 27.4
+ },
+ {
+  "id": "c01",
+  "src": "clips/c01.mp4",
+  "captions": "captions/c01.json",
+  "durationInSeconds": 26.8,
+  "hook": "La plage de GTA 6, première fois",
+  "cta": "Épisode complet sur la chaîne",
+  "punches": [
+   0.5,
+   13.4,
+   22.2
+  ],
+  "ctaStart": 23.6
+ },
+ {
+  "id": "c09",
+  "src": "clips/c09.mp4",
+  "captions": "captions/c09.json",
+  "durationInSeconds": 21.3,
+  "hook": "Les voitures de Vice City",
+  "cta": "Abonne-toi pour la suite à Vice City",
+  "punches": [
+   2.5,
+   6.2,
+   9.5,
+   16.2
+  ],
+  "ctaStart": 18.1
+ },
+ {
+  "id": "c03",
+  "src": "clips/c03.mp4",
+  "captions": "captions/c03.json",
+  "durationInSeconds": 42.8,
+  "hook": "J'ai pas assez d'argent pour le jet ski",
+  "cta": "Épisode complet sur la chaîne",
+  "punches": [
+   0.5,
+   4.2,
+   7.0,
+   38.2
+  ],
+  "ctaStart": 39.6
+ },
+ {
+  "id": "c08",
+  "src": "clips/c08.mp4",
+  "captions": "captions/c08.json",
+  "durationInSeconds": 19.4,
+  "hook": "Ce PNJ random est trop détaillé",
+  "cta": "Abonne-toi pour la suite à Vice City",
+  "punches": [
+   0.5,
+   3.5,
+   13.0
+  ],
+  "ctaStart": 16.2
+ },
+ {
+  "id": "c05",
+  "src": "clips/c05.mp4",
+  "captions": "captions/c05.json",
+  "durationInSeconds": 15.6,
+  "hook": "J'ai écrasé un mec avec ma remorque",
+  "cta": "Abonne-toi pour la suite à Vice City",
+  "punches": [
+   4.5,
+   8.6
+  ],
+  "ctaStart": 12.4
+ }
+]

@@ -1,0 +1,18 @@
+TITRE
+La plage de GTA 6 pour la première fois
+
+DESCRIPTION
+Vice Beach en plein midi : l'eau, le sable, les PNJ, les transats. Je m'attendais pas à ça. C'est quoi votre endroit préféré du jeu pour l'instant ?
+
+HASHTAGS
+#vicebeach #gta6plage #gta6map #gta6 #gta6gameplay #vicecity #gta6fr #gaming #rockstargames #gtavi
+
+CTA DE FIN (incrusté)
+Épisode complet sur la chaîne
+
+--- technique ---
+source      : input/source.mp4  425.0s -> 451.8s
+durée       : 26.8s
+format      : 1080x1920, 30 fps, H.264 + AAC, -14 LUFS
+hook        : La plage de GTA 6, première fois
+plateformes : TikTok / YouTube Shorts / Instagram Reels

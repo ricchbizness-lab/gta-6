@@ -163,6 +163,41 @@ def cmd_cut(a):
         print(f"Clip {cid} : {hms(start)[:8]} -> {hms(end)[:8]} ({end - start:.1f}s) -> {dest}")
 
 
+# ----------------------------------------------------------- normalize
+def cmd_normalize(a):
+    """Normalise le loudness (EBU R128, deux passes) et finalise pour mobile."""
+    need("ffmpeg")
+    src = Path(a.video)
+    if not src.is_file():
+        sys.exit(f"Fichier introuvable : {src}")
+    out = Path(a.out)
+    out.mkdir(parents=True, exist_ok=True)
+    dest = out / src.name
+
+    # Passe 1 : mesure
+    probe = subprocess.run(
+        ["ffmpeg", "-nostdin", "-i", str(src), "-af",
+         f"loudnorm=I={a.lufs}:TP={a.tp}:LRA={a.lra}:print_format=json",
+         "-f", "null", "-"],
+        capture_output=True, text=True)
+    try:
+        blob = probe.stderr[probe.stderr.rindex("{"):probe.stderr.rindex("}") + 1]
+        m = json.loads(blob)
+    except (ValueError, json.JSONDecodeError):
+        sys.exit("Mesure loudnorm illisible")
+
+    af = (f"loudnorm=I={a.lufs}:TP={a.tp}:LRA={a.lra}"
+          f":measured_I={m['input_i']}:measured_TP={m['input_tp']}"
+          f":measured_LRA={m['input_lra']}:measured_thresh={m['input_thresh']}"
+          f":offset={m['target_offset']}:linear=true:print_format=summary")
+
+    # Passe 2 : application (vidéo copiée, seul l'audio est réencodé)
+    run(["ffmpeg", "-y", "-nostdin", "-i", src, "-af", af,
+         "-c:v", "copy", "-c:a", "aac", "-b:a", "192k", "-ar", "48000",
+         "-movflags", "+faststart", dest])
+    print(f"{src.name} : {m['input_i']} LUFS -> {a.lufs} LUFS  ->  {dest}")
+
+
 def main():
     p = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     sub = p.add_subparsers(dest="cmd", required=True)
@@ -191,6 +226,14 @@ def main():
     s.add_argument("--copy", action="store_true", help="sans réencodage (instantané, mais démarre à l'image clé précédente : clip plus long que demandé)")
     s.add_argument("--crf", type=int, default=18)
     s.set_defaults(fn=cmd_cut)
+
+    s = sub.add_parser("normalize", help="normalise le loudness a -14 LUFS")
+    s.add_argument("video")
+    s.add_argument("--out", default="out")
+    s.add_argument("--lufs", type=float, default=-14.0)
+    s.add_argument("--tp", type=float, default=-1.5)
+    s.add_argument("--lra", type=float, default=11.0)
+    s.set_defaults(fn=cmd_normalize)
 
     a = p.parse_args()
     a.fn(a)
