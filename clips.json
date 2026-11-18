@@ -1,0 +1,74 @@
+[
+  {
+    "id": "c10",
+    "start": 928.9,
+    "end": 969.4,
+    "hook": "Il est trop tard pour me rendre",
+    "cta": "Épisode complet sur la chaîne",
+    "why": "Meilleur arc du live : bateau de police -> fuite dans l'eau -> mort -> plan aérien de Vice Beach. Montée de tension, fin nette sur la cinématique. Image propre (overlay retiré).",
+    "score": 10
+  },
+  {
+    "id": "c02",
+    "start": 855.5,
+    "end": 900.6,
+    "hook": "Un couteau dans les fesses",
+    "cta": "Épisode complet sur la chaîne",
+    "why": "LE moment GTA : couteau lancé, PNJ tué par accident, corps soulevé puis jeté à l'eau 'ni vu ni connu'. Arc complet avec punchline finale. Image propre.",
+    "score": 9
+  },
+  {
+    "id": "c07",
+    "start": 668.4,
+    "end": 699.0,
+    "hook": "Est-ce que la bouée flotte vraiment ?",
+    "cta": "Épisode complet sur la chaîne",
+    "why": "Crocodile gonflable vert porté sur la plage puis mis à l'eau. Question posée a 0s, réponse a 27s : structure de rétention idéale. Très visuel, image propre.",
+    "score": 9
+  },
+  {
+    "id": "c01",
+    "start": 425.0,
+    "end": 451.8,
+    "hook": "La plage de GTA 6, première fois",
+    "cta": "Épisode complet sur la chaîne",
+    "why": "La révélation de Vice Beach à vélo : eau, transats, PNJ, panorama. C'est l'argument de vente de la vidéo. Fin nette sur 'la plage c'est une folie'.",
+    "score": 9
+  },
+  {
+    "id": "c09",
+    "start": 304.4,
+    "end": 325.7,
+    "hook": "Les voitures de Vice City",
+    "cta": "Abonne-toi pour la suite à Vice City",
+    "why": "Lamborghini verte, Corvette, Ocean Drive, palmiers, bar avec danseuses. Le car-spotting marche tout seul en short et se comprend sans le son.",
+    "score": 8
+  },
+  {
+    "id": "c03",
+    "start": 572.3,
+    "end": 615.1,
+    "hook": "J'ai pas assez d'argent pour le jet ski",
+    "cta": "Épisode complet sur la chaîne",
+    "why": "Arc de frustration identifiable : il choisit son jet ski, découvre qu'il faut payer, n'a pas l'argent, abandonne. Appelle les commentaires ('c'est quoi BugMi ?').",
+    "score": 7
+  },
+  {
+    "id": "c08",
+    "start": 713.3,
+    "end": 732.7,
+    "hook": "Ce PNJ random est trop détaillé",
+    "cta": "Abonne-toi pour la suite à Vice City",
+    "why": "Wow technique + théorie ('c'est peut-être un personnage de l'histoire, on sait jamais avec Rockstar') : bon déclencheur de commentaires. Format court.",
+    "score": 7
+  },
+  {
+    "id": "c05",
+    "start": 390.4,
+    "end": 406.0,
+    "hook": "J'ai écrasé un mec avec ma remorque",
+    "cta": "Abonne-toi pour la suite à Vice City",
+    "why": "Fail court et lisible : il force le passage vers la plage avec la remorque de jet ski et renverse un PNJ. Format 15s pur.",
+    "score": 7
+  }
+]
