@@ -1,8 +1,8 @@
 TITRE
-J'ai écrasé un mec avec ma remorque de jet ski
+Impossible d'amener mon jet ski jusqu'à l'eau
 
 DESCRIPTION
-Je voulais juste amener mon jet ski jusqu'à l'eau. Ça passait pas. Il y avait quelqu'un.
+Je voulais juste traverser pour mettre le jet ski à l'eau. La remorque passe pas. J'ai insisté. Mauvaise idée.
 
 HASHTAGS
 #gtafail #gta6jetski #gameplayfr #gta6 #gta6gameplay #vicecity #gta6fr #gaming #rockstargames #gtavi
@@ -14,5 +14,5 @@ Abonne-toi pour la suite à Vice City
 source      : input/source.mp4  390.4s -> 406.0s
 durée       : 15.6s
 format      : 1080x1920, 30 fps, H.264 + AAC, -14 LUFS
-hook        : J'ai écrasé un mec avec ma remorque
+hook        : Ça passe pas
 plateformes : TikTok / YouTube Shorts / Instagram Reels

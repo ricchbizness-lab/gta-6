@@ -48,6 +48,9 @@ COPY = {
         "tags": ["#gta6jetski", "#gta6argent", "#gameplayfr"],
     },
     "c08": {
+        "alerte": ("PNJ en bikini cadrée en pied sur les deux premiers tiers. "
+                   "Publier sur YouTube Shorts ; éviter TikTok et Instagram "
+                   "Reels (modération automatique sur l'image, pas l'intention)."),
         "titre": "Ce PNJ random est trop détaillé pour être random",
         "desc": ("Regardez les détails de son visage. Soit Rockstar a poussé le "
                  "niveau de détail très loin sur tous les PNJ, soit c'est un "
@@ -55,9 +58,9 @@ COPY = {
         "tags": ["#gta6pnj", "#gta6details", "#rockstargames"],
     },
     "c05": {
-        "titre": "J'ai écrasé un mec avec ma remorque de jet ski",
-        "desc": ("Je voulais juste amener mon jet ski jusqu'à l'eau. Ça passait "
-                 "pas. Il y avait quelqu'un."),
+        "titre": "Impossible d'amener mon jet ski jusqu'à l'eau",
+        "desc": ("Je voulais juste traverser pour mettre le jet ski à l'eau. "
+                 "La remorque passe pas. J'ai insisté. Mauvaise idée."),
         "tags": ["#gtafail", "#gta6jetski", "#gameplayfr"],
     },
 }
@@ -70,13 +73,17 @@ def main():
     for c in clips:
         cid = c["id"]
         copy = COPY[cid]
-        tags = copy["tags"] + BASE_TAGS
+        seen = set()
+        tags = [t for t in copy["tags"] + BASE_TAGS
+                if not (t.lower() in seen or seen.add(t.lower()))]
         dur = float(c["end"]) - float(c["start"])
         body = (
             f"TITRE\n{copy['titre']}\n\n"
             f"DESCRIPTION\n{copy['desc']}\n\n"
             f"HASHTAGS\n{' '.join(tags)}\n\n"
             f"CTA DE FIN (incrusté)\n{c['cta']}\n\n"
+            + (f"ALERTE PLATEFORME\n{copy['alerte']}\n\n" if copy.get("alerte") else "")
+            + 
             f"--- technique ---\n"
             f"source      : input/source.mp4  {c['start']}s -> {c['end']}s\n"
             f"durée       : {dur:.1f}s\n"
