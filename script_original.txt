@@ -1,0 +1,58 @@
+# Script réel de crabe_geant.mp4, reconstruit en LISANT les sous-titres
+# incrustés dans l'image (work/crabe/subs/), pas la transcription audio.
+#
+# La transcription Whisper comportait des erreurs d'écoute que j'avais prises
+# à tort pour des fautes du créateur. Le script d'origine est propre.
+#
+# Whisper entendait          -> l'image affiche
+#   "mitraette exclusive"       "MITRAILLETTE EXCLUSIVE LÉGENDAIRE"
+#   "historique de malade..."   "...SUR GTA 6 AVEC UN CRABE GÉANT CACHÉ"
+#   "le lieu où l'encontrer"    "ET LE LIEU OÙ ON LE RENCONTRE"
+#   "tu mets le 0 de 12"        code "0212" affiché en gros à 47,5-48,5 s
+#   "au moment où on se parle"  "LÀ, À CE MOMENT-LÀ"
+
+[00:02.2] sur GTA 6
+[00:03.4] avec un crabe géant caché.
+[00:04.6] Si tu le bats,
+[00:05.8] une mitraillette exclusive
+[00:07.0] légendaire
+[00:09.4] Je te montre
+[00:10.6] et le lieu
+[00:11.8] où on le rencontre.
+[00:13.0] À Pelican Valley,
+[00:14.2] exactement ici
+[00:15.4] sur la carte.
+[00:16.6] Sur le côté
+[00:17.8] active le boîtier électrique
+[00:19.0] pour remettre le courant
+[00:20.2] et entre dans la maison.
+[00:21.4] L'ordinateur te demande
+[00:22.6] un mot de passe,
+[00:23.8] sur le sol
+[00:25.0] va le lire, reviens
+[00:27.4] et tape le code.
+[00:28.6] Et là, derrière toi,
+[00:29.8] un crabe géant débarque !
+[00:31.0] Tu dois l'affronter
+[00:32.2] prenne la fuite.
+[00:33.4] Derrière toi,
+[00:34.6] tu ouvres le coffre-fort
+[00:35.8] avec le code 0072,
+[00:38.2] tu auras 1 000 $
+[00:39.4] et un autre code
+[00:40.6] derrière la maison,
+[00:41.8] tu trouveras un ponton
+[00:43.0] jusqu'au petit bâtiment
+[00:44.2] fermé par un code.
+[00:46.6] Là, à ce moment-là,     <- code 0212 affiché à l'écran
+[00:49.5] et à l'intérieur,
+[00:50.2] tu trouveras
+[00:51.4] la mitraillette exclusive
+[00:53.8] de 10 000 dollars.
+[00:55.0] Pense à mettre
+[00:56.2] ton argent à l'abri,
+[00:57.4] sinon tu perds tout
+[00:58.6] Et pour terminer,
+[00:59.8] comme d'habitude,
+[01:01.0] tous les secrets
+[01:02.2] de GTA 6
