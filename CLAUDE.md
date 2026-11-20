@@ -40,6 +40,14 @@ Tu fais TOUT le travail de production. L'humain valide les moments choisis (éta
 - Les fichiers de la VM ne sont pas sur le PC de l'humain : committe les livrables légers (`out/*.mp4`, `out/*.txt`, `clips.json`)
   sur une branche dédiée du dépôt, jamais la vidéo source (ajoute `input/` et `work/` au .gitignore).
 
+## Contexte d'exécution : PC local (skill gta-deep-dive)
+- Si tu tournes sur le PC de l'humain (Claude Code local), la section « session cloud » ci-dessus
+  ne s'applique pas : YouTube est accessible, les ressources sont celles de la machine.
+- Les vidéos longues GTA se font avec le skill `gta-deep-dive` (`.claude/skills/gta-deep-dive/`).
+  Lance d'abord `python .claude/skills/gta-deep-dive/scripts/check_tools.py gta-videos/<projet>`.
+- Les projets du skill vont dans `gta-videos/` (ignoré par git : jamais de rushes commités).
+- Respecte le budget de téléchargement du skill et arrête-toi au premier blocage YouTube.
+
 ## Workflow (dans cet ordre, avec points d'arrêt)
 1. **Brief** : lis `brief.md`, résume les contraintes.
 2. **Prep** : `python clip_pipeline.py prep input/<video> --out work`
