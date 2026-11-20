@@ -1,0 +1,39 @@
+TITRE
+Easter egg GTA 6 : le crabe géant qui donne une arme exclusive et 11 000 $
+
+DESCRIPTION
+Un crabe géant est caché à Pelican Valley. Tu le bats, tu repars avec une
+mitraillette exclusive légendaire et 11 000 dollars. Code du coffre : 0072.
+Code de la porte : 0212. Je te montre tout dans la vidéo.
+
+HASHTAGS
+#gta6 #gta6easteregg #gta6secrets #crabegeant #gta6fr #gaming #rockstargames #gtavi
+
+--- technique ---
+source      : input/crabe_geant.mp4 (short déjà monté, 720x1280, 63,8 s)
+traitement  : voice_change (voice_change_merge) avec la voix Bram
+              voice_id 549ff70a-3ee7-4f04-a4d9-89a24fab7709, voice_type preset
+              puis clip_pipeline.py normalize : -24,38 LUFS -> -14,0 LUFS
+livrable    : 720x1280, 30 fps, H.264 + AAC stéréo, 63,70 s, 11,2 Mo
+mesuré      : -14,3 LUFS, LRA 4,1 LU, crête -1,3 dBFS
+plateformes : TikTok / YouTube Shorts / Instagram Reels (format natif, aucun
+              agrandissement : la source est un 720x1280 au cadre graphique
+              conçu pour cette taille)
+
+--- synchronisme ---
+12 ancres réparties de 0,4 s à 62,2 s, 12/12 retrouvées.
+Écart moyen +0,04 s, écart max 0,32 s, aucune dérive cumulative.
+Contrôle densifié sur les 13 mots après 52 s : 11 à ±0,02 s, deux écarts
+isolés (abonne +0,52 s, avant +0,32 s) suivis d'un retour à 0,00 s.
+Les sous-titres incrustés changent toutes les ~1,2 s : l'écart maximal reste
+sous la moitié d'une page de sous-titre.
+
+--- image ---
+Réencodée par voice_change mais visuellement identique : bandeau "EASTER EGG",
+cadre palmiers, sous-titres mot par mot incrustés, incrustations des codes
+(0072 à 36 s, 0212 à 48 s) et carte d'abonnement finale, tous intacts.
+Vérifié à 14 s, 36 s, 48 s et 61 s.
+
+--- ATTENTION PUBLICATION ---
+La voix off est générée par IA (remplacement de timbre sur la voix d'origine).
+À déclarer comme média synthétique sur TikTok, YouTube et Instagram.
