@@ -1,30 +1,40 @@
-# Brief — défaut Clip Studio (TikTok / YouTube Shorts / Instagram Reels)
+# Brief — Clip Studio
 
-Aucune campagne cliente : règles par défaut validées par l'humain le 2026-11-18.
-Source : vidéo fournie par l'humain, gameplay GTA 6 FR, clipping autorisé par lui.
+Règles par défaut, mises à jour le 2026-11-20 sur instruction de l'humain.
+
+## Provenance des sources
+- `input/source.mp4` — gameplay GTA 6 FR fourni par l'humain (Dropbox, 18/11).
+- `input/crabe_geant.mp4` — short « easter egg crabe géant », fourni par l'humain
+  le 20/11. Clipping et revoicing autorisés par lui : il a explicitement levé la
+  condition préalable de vérification le 20/11 après que je l'aie signalée.
+  Format d'origine 720x1280, 63,8 s, voix off scriptée.
 
 ## Contraintes
 - **Langue** : français. Sous-titres FR mot par mot obligatoires (lecture sans son).
 - **Plateformes** : TikTok, YouTube Shorts, Instagram Reels. Même master pour les trois.
-- **Format** : 1080x1920, 30 fps, H.264 + AAC 192k, faststart. Audio -14 LUFS.
-- **Durée** : 15-45 s. Mix assumé : ~3 clips courts 15-22 s (fails/punch),
-  ~5 clips 30-45 s (découverte/spectacle).
-- **Recadrage** : full-bleed, crop 9:16 centré depuis le 1920x1080 (pas de barres floutées).
-  Pas de facecam dans la source. La minimap (bas gauche) sort du cadre, c'est voulu.
+- **Format** : H.264 + AAC 192k, faststart, audio -14 LUFS.
+  Sortie 1080x1920 si la source le permet ; sinon on garde la définition native
+  plutôt que d'agrandir (voir `input/crabe_geant.mp4` : 720x1280).
+- **Durée** : 15-60 s.
+- **Recadrage** : full-bleed, pas de barres floutées.
 - **Zones sûres** : rien d'important dans les 150 px du haut ni les 320 px du bas.
-- **CTA** : générique, sans nom de créateur (non fourni).
-  Fin de clip : "Épisode complet sur la chaîne" / "Abonne-toi pour la suite".
 - **Hook** : texte lisible dans les 2 premières secondes, sans le son.
+- **CTA** : générique, sans nom de créateur (non fourni).
+
+## Voix off générée par IA : AUTORISÉE
+Levée explicite de l'interdiction par l'humain le 2026-11-20.
+- Voix de synthèse et remplacement de voix autorisés sur les sources listées
+  ci-dessus en « Provenance ».
+- Reste interdit : générer des **images** ou de la **vidéo** par IA. Le visuel
+  provient uniquement de la source.
+- Toute voix générée doit être signalée dans le `.txt` du livrable, pour que
+  l'humain puisse cocher la case « contenu généré par IA » à la publication
+  (obligatoire sur TikTok, YouTube et Instagram pour les médias synthétiques).
 
 ## Interdits
-- Aucun visuel ni voix généré par IA. L'IA sert à choisir les moments et à calculer
-  le montage (crop, sous-titres, punch-ins, étalonnage) — rien de génératif.
 - Aucune publication : les livrables restent dans `out/`.
-- Pas de musique ajoutée (droits non vérifiés) : son du jeu uniquement.
+- Ne jamais écraser `input/` (fichiers en lecture seule).
+- Pas de musique ajoutée (droits non vérifiés) : son de la source uniquement.
 
 ## Hashtags (base, à ajuster par clip)
-#gta6 #gta6gameplay #vicecity #gta6fr #gaming #rockstargames #gtavi
-
-## Non vérifié
-Limites de durée officielles des plateformes non confirmées (domaines support.google.com /
-developers.facebook.com hors réseau autorisé). 15-45 s reste sous toutes les limites connues.
+#gta6 #gta6gameplay #gta6fr #gaming #rockstargames #gtavi

@@ -1,0 +1,20 @@
+# Script voix off — crabe_geant.mp4
+# Réécrit depuis la VO d'origine (work/crabe/transcript.txt).
+# Les repères [00:00] alignent le texte sur l'image existante.
+# Le TEST ne génère que le BLOC 1 (0-10 s).
+
+[00:00] Un crabe géant est caché dans GTA 6.
+[00:03] Tu le bats, tu repars avec une mitraillette légendaire et onze mille dollars.
+[00:08] Je te montre où, et comment le faire apparaître.
+
+# --- au-delà du test, pour la vidéo entière ---
+
+[00:12] Direction Pelican Valley, exactement ici sur la carte.
+[00:16] Sur le flanc du bâtiment principal, active le boîtier électrique pour remettre le courant, puis entre dans la maison.
+[00:21] L'ordinateur réclame un mot de passe. Il est gravé sur le sol de la chambre : va le lire, reviens, tape le code.
+[00:27] Et là, derrière toi, le crabe géant débarque. Tu l'affrontes jusqu'à ce qu'il prenne la fuite.
+[00:32] Derrière toi, un coffre-fort. Code zéro zéro sept deux. Mille dollars dedans, et un deuxième code.
+[00:40] Derrière la maison, un ponton mène à un petit bâtiment verrouillé.
+[00:45] Tu entres le deuxième code, et à l'intérieur : la mitraillette exclusive et un sac de dix mille dollars.
+[00:53] Un conseil : mets ton argent à l'abri tout de suite. Si tu meurs, tu perds tout.
+[00:58] Abonne-toi, je te montre les secrets de GTA 6 avant tout le monde.

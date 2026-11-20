@@ -198,6 +198,78 @@ def cmd_normalize(a):
     print(f"{src.name} : {m['input_i']} LUFS -> {a.lufs} LUFS  ->  {dest}")
 
 
+# -------------------------------------------------------------- remix
+def measure_loudnorm(path, lufs, tp, lra):
+    probe = subprocess.run(
+        ["ffmpeg", "-nostdin", "-i", str(path), "-af",
+         f"loudnorm=I={lufs}:TP={tp}:LRA={lra}:print_format=json",
+         "-f", "null", "-"], capture_output=True, text=True)
+    try:
+        blob = probe.stderr[probe.stderr.rindex("{"):probe.stderr.rindex("}") + 1]
+        return json.loads(blob)
+    except (ValueError, json.JSONDecodeError):
+        sys.exit(f"Mesure loudnorm illisible pour {path}")
+
+
+def duration_of(path):
+    r = subprocess.run(
+        ["ffprobe", "-v", "error", "-show_entries", "format=duration",
+         "-of", "default=nw=1:nk=1", str(path)],
+        capture_output=True, text=True, check=True)
+    return float(r.stdout.strip())
+
+
+def cmd_remix(a):
+    """Remplace la bande son : nouvelle voix normalisee + lit sans voix attenue.
+
+    L'image n'est jamais reencodee (-c:v copy) et sa duree fait autorite.
+    """
+    need("ffmpeg")
+    video, voice, bed = Path(a.video), Path(a.voice), Path(a.bed)
+    for f in (video, voice, bed):
+        if not f.is_file():
+            sys.exit(f"Fichier introuvable : {f}")
+    out = Path(a.out)
+    out.mkdir(parents=True, exist_ok=True)
+    dest = out / (a.name or f"{video.stem}_remix.mp4")
+
+    target = duration_of(video)
+    vdur = duration_of(voice)
+
+    # Ajuste le debit de la voix si elle deborde de l'image
+    tempo = 1.0
+    if a.fit and vdur > target:
+        tempo = vdur / target
+        if tempo > 2.0:
+            sys.exit(f"Voix trop longue ({vdur:.1f}s pour {target:.1f}s) : "
+                     "raccourcis le script plutot que d'accelerer x%.2f" % tempo)
+
+    m = measure_loudnorm(voice, a.lufs, a.tp, a.lra)
+    norm = (f"loudnorm=I={a.lufs}:TP={a.tp}:LRA={a.lra}"
+            f":measured_I={m['input_i']}:measured_TP={m['input_tp']}"
+            f":measured_LRA={m['input_lra']}:measured_thresh={m['input_thresh']}"
+            f":offset={m['target_offset']}:linear=true")
+
+    vchain = f"[1:a]{norm}"
+    if tempo > 1.0001:
+        vchain += f",atempo={tempo:.4f}"
+    vchain += f",adelay={int(a.voice_delay * 1000)}:all=1,apad[vv]"
+
+    fc = (f"{vchain};"
+          f"[2:a]volume={a.bed_gain},apad[bb];"
+          f"[vv][bb]amix=inputs=2:duration=longest:normalize=0,"
+          f"atrim=0:{target:.3f},asetpts=N/SR/TB[a]")
+
+    run(["ffmpeg", "-y", "-nostdin", "-i", video, "-i", voice, "-i", bed,
+         "-filter_complex", fc, "-map", "0:v:0", "-map", "[a]",
+         "-c:v", "copy", "-c:a", "aac", "-b:a", "192k", "-ar", "48000",
+         "-movflags", "+faststart", "-shortest", dest])
+
+    print(f"Remix : image {target:.2f}s | voix {vdur:.2f}s"
+          f"{f' acceleree x{tempo:.3f}' if tempo > 1.0001 else ''} "
+          f"a {a.lufs} LUFS | lit a {a.bed_gain} -> {dest}")
+
+
 def main():
     p = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     sub = p.add_subparsers(dest="cmd", required=True)
@@ -234,6 +306,21 @@ def main():
     s.add_argument("--tp", type=float, default=-1.5)
     s.add_argument("--lra", type=float, default=11.0)
     s.set_defaults(fn=cmd_normalize)
+
+    s = sub.add_parser("remix", help="nouvelle voix + lit sans voix sur l'image d'origine")
+    s.add_argument("video")
+    s.add_argument("voice")
+    s.add_argument("bed")
+    s.add_argument("--out", default="out/test")
+    s.add_argument("--name", default=None)
+    s.add_argument("--bed-gain", type=float, default=0.3)
+    s.add_argument("--voice-delay", type=float, default=0.0)
+    s.add_argument("--lufs", type=float, default=-14.0)
+    s.add_argument("--tp", type=float, default=-1.5)
+    s.add_argument("--lra", type=float, default=11.0)
+    s.add_argument("--fit", action="store_true",
+                   help="accelere la voix si elle depasse la duree de l'image")
+    s.set_defaults(fn=cmd_remix)
 
     a = p.parse_args()
     a.fn(a)
