@@ -89,3 +89,33 @@ Solde : 35,21 -> 33,94 crédits. Cumul depuis le début du test : 2,94 cr.
 Arthur et Bram passent, Cody / Evan / Miles / Reid / Dylan sont refusés en 400.
 Le rejet ne coûte rien, donc tester Qwen avant ElevenLabs est toujours gagnant
 (0,07 cr contre 0,60 cr quand ça passe).
+
+---
+
+# B_bram.mp4 — version retenue (2026-11-20)
+
+L'utilisateur a entendu un décalage sur `A_bram.mp4`. Mesure à l'appui : la
+méthode A désynchronise, la méthode B non.
+
+## Mesure du synchronisme
+Comparaison des instants d'attaque de mots-ancres, version contre audio d'origine :
+
+| version | écart moyen | écart max | verdict |
+|---|---|---|---|
+| A_bram (remix) | -1,85 s | 2,66 s | désynchronisé |
+| **B_bram (voice_change)** | **-0,01 s** | **0,04 s** | **synchrone** |
+
+Cause du décalage de A : la voix générée démarre à 0 s et parle d'une traite,
+alors que les sous-titres incrustés placent "sur GTA 6" à 2,2 s et
+"légendaire" à 6,4 s. Aucun réglage de remix ne corrige ça sans découper la
+voix segment par segment.
+
+## Paramètres de B_bram.mp4
+- `voice_change` (`voice_change_merge`), video_id `feca1b65-...` (extrait 10 s)
+- voice_id `549ff70a-3ee7-4f04-a4d9-89a24fab7709` (Bram), voice_type `preset`
+- sortie brute -23,98 LUFS -> normalisée -14,0 LUFS (`clip_pipeline.py normalize`)
+- mesuré : -14,1 LUFS, crête -1,4 dBFS, 720x1280, 10,00 s
+- texte et minutage d'origine conservés -> les sous-titres incrustés restent calés
+
+## Coût
+`voice_change` 10 s : 1,00 cr. Extrapolation 64 s : environ 6,4 cr.
