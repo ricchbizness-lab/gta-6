@@ -1,0 +1,22 @@
+TITRE
+GTA 6 : 3 techniques pour te faire de l'argent dès le début
+
+DESCRIPTION
+Tu lances GTA 6 sans un dollar en poche ? Trois techniques rapides pour remplir tes poches dès le chapitre 2. Entrepôt au nord-est d'Hamlet, sous le L de Vice Dale County, et la cachette de 1 400 dollars derrière la grille de ventilation.
+
+HASHTAGS
+#gta6 #gta6argent #gta6astuces #gta6fr #gaming #rockstargames #gtavi
+
+--- technique ---
+source      : input/amintech_0.mp4 (short deja monte, 720x1280)
+traitement  : voice_change (voice_change_merge), voix Bram
+              voice_id 549ff70a-3ee7-4f04-a4d9-89a24fab7709, voice_type preset
+              puis clip_pipeline.py normalize vers -14,0 LUFS
+livrable    : 720x1280, 30 fps, H.264 + AAC, 58.500000s
+plateformes : TikTok / YouTube Shorts / Instagram Reels (format natif)
+
+--- ATTENTION PUBLICATION ---
+1. Voix off generee par IA : a declarer comme media synthetique sur TikTok,
+   YouTube et Instagram.
+2. La voix dit "moi c'est Amin" a la fin : le nom du createur d'origine est
+   prononce dans le script, desormais par une voix de synthese.
