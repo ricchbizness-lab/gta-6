@@ -49,3 +49,43 @@ Chaque sortie a été repassée dans faster-whisper pour contrôler la prononcia
 ## Contenu généré par IA
 Les trois versions contiennent une voix de synthèse. À déclarer comme média
 synthétique à la publication sur TikTok, YouTube et Instagram.
+
+---
+
+# Casting voix — révision du 2026-11-20
+
+Arthur jugé trop âgé. Les voix n'ayant aucune métadonnée d'âge dans l'API,
+j'ai classé les 36 voix masculines par hauteur fondamentale médiane mesurée
+sur leurs aperçus (`analyse_voix.py`, résultats dans `work/voices/f0.json`).
+Repères : <115 Hz grave/mature, 115-135 Hz moyenne, >135 Hz claire/jeune.
+
+Têtes de classement : Cody 250,0 · Bram 205,1 · Evan 188,2 · Miles 188,2 ·
+John 173,9 · Reid 170,2 · Dylan 150,2 · Callan 143,5 · Arthur 141,6 Hz.
+
+## A_bram.mp4 — VOIX RETENUE
+- voix    : `qwen_audio_tts`, voice_id `549ff70a-3ee7-4f04-a4d9-89a24fab7709`
+            (Bram), voice_type `preset`, language `fr`,
+            instruction "Voix off gaming, jeune homme, energique, complice,
+            debit rapide", format wav, sample_rate 48000
+- durée voix generee : 8,96 s pour 10 s -> tient sans accélération
+- F0 mesurée sur le rendu : 164,9 Hz, contre 136,8 Hz pour Arthur
+  (+28 Hz, environ 3 demi-tons plus haut)
+- lit, remix et normalisation : identiques à A_qwen
+- mesuré  : -14,6 LUFS, crête -1,0 dBFS
+- Whisper : fr p=1.00, texte restitué conforme au script
+
+## Crédits de la révision
+| Étape | Coût |
+|---|---|
+| Echantillons Evan + Dylan (`text2speech_v2`) | 1,20 cr |
+| Tentatives Qwen sur 5 voix hors liste blanche | 0,00 cr (rejet 400) |
+| Voix Bram (`qwen_audio_tts`) | 0,07 cr |
+| **Sous-total révision** | **1,27 cr** |
+
+Solde : 35,21 -> 33,94 crédits. Cumul depuis le début du test : 2,94 cr.
+
+## Limite constatée
+`qwen_audio_tts` n'accepte qu'une liste blanche de voix non documentée :
+Arthur et Bram passent, Cody / Evan / Miles / Reid / Dylan sont refusés en 400.
+Le rejet ne coûte rien, donc tester Qwen avant ElevenLabs est toujours gagnant
+(0,07 cr contre 0,60 cr quand ça passe).
