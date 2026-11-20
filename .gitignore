@@ -9,3 +9,4 @@ remotion/out/
 remotion/public/clips/
 build/
 gta-videos/
+.venv-tools/
