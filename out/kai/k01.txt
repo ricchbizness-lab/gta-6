@@ -17,8 +17,9 @@ Kai Cenat waited 13 years for this moment and thanked God before pressing play ð
 [ ] Compte avec >= 50 % d'audience US/CA/AU/UK/NZ, niche gaming/streamers
 [ ] Miniature : une frame du clip (pas de miniature repetitive)
 
---- version avec miniature ---
-out/kai/k01_miniature.mp4 : miniature fournie par l'humain en surimpression sur la 1re seconde
-(l'audio demarre des 0 s ; la version sans miniature reste out/kai/k01.mp4).
+--- version avec intro miniature ---
+out/kai/k01_intro.mp4 (32,4 s) : intro de 1,2 s avec la miniature fournie (zoom lent),
+flash blanc, puis le clip k01 complet et intact. Whoosh de transition synthetise (pas
+de son sous droits, pas d'IA). La version sans intro reste out/kai/k01.mp4.
 ATTENTION regle "Logos of any kind are not allowed" : la miniature contient le logo
 "Grand Theft Auto VI" et un logo MLB sur la casquette.
