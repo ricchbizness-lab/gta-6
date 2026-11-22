@@ -2,6 +2,17 @@
 
 Règles par défaut, mises à jour le 2026-11-20 sur instruction de l'humain.
 
+## Campagne en cours : run GTA 6 de Kai Cenat (2026-11-22)
+- Campagne de clipping declaree par l'humain : le clipping de ce stream est autorise
+  dans ce cadre. **Regles exactes de la campagne non encore fournies** (hashtags,
+  mentions, duree, plateformes, IA) : les livrables sont provisoires sur ces points.
+- En attendant : **aucune IA generative** (ni voix, ni visuel), son d'origine uniquement.
+- Source de travail : `input/kai_run.mp4` (montage YouTube 2 h 05, 640x360, fourni par
+  l'humain via Dropbox). Image HD : VOD Twitch officielle v2932305259 (1080p60),
+  segments telecharges uniquement pour les passages retenus. Son : celui de la
+  source YouTube (la VOD Twitch a des passages coupes pour droits musicaux).
+- Format : facecam de Kai en haut, gameplay en bas, sans chat ni compteur de viewers.
+
 ## Provenance des sources
 - `input/source.mp4` — gameplay GTA 6 FR fourni par l'humain (Dropbox, 18/11).
 - `input/amintech_0.mp4`, `_1.mp4`, `_2.mp4` — shorts GTA 6 (argent, reglages,
