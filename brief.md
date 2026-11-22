@@ -2,16 +2,28 @@
 
 Règles par défaut, mises à jour le 2026-11-20 sur instruction de l'humain.
 
-## Campagne en cours : run GTA 6 de Kai Cenat (2026-11-22)
-- Campagne de clipping declaree par l'humain : le clipping de ce stream est autorise
-  dans ce cadre. **Regles exactes de la campagne non encore fournies** (hashtags,
-  mentions, duree, plateformes, IA) : les livrables sont provisoires sur ces points.
-- En attendant : **aucune IA generative** (ni voix, ni visuel), son d'origine uniquement.
-- Source de travail : `input/kai_run.mp4` (montage YouTube 2 h 05, 640x360, fourni par
-  l'humain via Dropbox). Image HD : VOD Twitch officielle v2932305259 (1080p60),
-  segments telecharges uniquement pour les passages retenus. Son : celui de la
-  source YouTube (la VOD Twitch a des passages coupes pour droits musicaux).
-- Format : facecam de Kai en haut, gameplay en bas, sans chat ni compteur de viewers.
+## Campagne en cours : Kai Cenat GTA 6 Marathon (regles recues le 2026-11-22)
+Paiement : seuil de 1 000 vues par video ; seules les videos approuvees comptent.
+**Obligatoire**
+- Source : stream/video/clip du marathon GTA de Kai Cenat a partir du 18/11/2026, chaines
+  officielles (Twitch kaicenat, YouTube @KaiCenatLive / @KaiCenatGaming).
+- Kai Cenat = sujet principal de la video (facecam en haut, jamais seulement en intro).
+- Plateformes : TikTok, Instagram Reels, YouTube Shorts, X. Rien d'autre.
+- Le **texte a l'ecran ou la legende doit citer "Kai Cenat"** (on fait les deux).
+- Hashtag **#KAICENAT** obligatoire dans la legende.
+- Audience du compte : au moins 50 % de pays anglophones natifs (US, CA, AU, UK, NZ),
+  et un compte dont la niche est coherente (gaming / streamers).
+**Interdit**
+- Montrer Kai sous un jour negatif, creer une fausse narration negative ("hate farm").
+- Manipuler vues ou engagement (bots, reposts, collabs).
+- **Aucun logo** (pas de watermark, pas de logo de chaine ; on recadre aussi les
+  compteurs Twitch/YouTube du stream).
+- Miniatures repetitives ou sans rapport, legendes en japonais.
+- Reposter un Short deja publie par les chaines de Kai : chaque clip est notre propre coupe.
+**Choix de production**
+- Langue : anglais (hooks, sous-titres, legendes). Aucune IA generative.
+- Image : VOD Twitch officielle v2932305259 en 1080p ; son de la VOD (passages non muets).
+- Format : facecam en haut, jeu en bas, 1080x1920, -14 LUFS, sans chat ni compteur.
 
 ## Provenance des sources
 - `input/source.mp4` — gameplay GTA 6 FR fourni par l'humain (Dropbox, 18/11).

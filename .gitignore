@@ -10,3 +10,4 @@ remotion/public/clips/
 build/
 gta-videos/
 .venv-tools/
+remotion/public/kai/*.mp4

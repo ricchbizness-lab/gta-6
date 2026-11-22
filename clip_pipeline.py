@@ -189,7 +189,9 @@ def cmd_normalize(a):
     af = (f"loudnorm=I={a.lufs}:TP={a.tp}:LRA={a.lra}"
           f":measured_I={m['input_i']}:measured_TP={m['input_tp']}"
           f":measured_LRA={m['input_lra']}:measured_thresh={m['input_thresh']}"
-          f":offset={m['target_offset']}:linear=true:print_format=summary")
+          f":offset={m['target_offset']}:linear=true:print_format=summary"
+          # limiteur de securite : loudnorm lineaire ne garantit pas la crete
+          f",alimiter=limit={10 ** (a.tp / 20):.4f}:level=false:attack=5:release=50")
 
     # Passe 2 : application (vidéo copiée, seul l'audio est réencodé)
     run(["ffmpeg", "-y", "-nostdin", "-i", src, "-af", af,

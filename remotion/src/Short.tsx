@@ -21,6 +21,8 @@ export type ShortProps = {
   punches: number[];
   ctaStart: number;
   durationInSeconds: number;
+  // stacked : facecam en haut, jeu en bas (clips de streamer)
+  layout?: "fullbleed" | "stacked";
 };
 
 const HOOK_DURATION = 2.6; // s : le hook doit être lu avant 2 s
@@ -70,7 +72,9 @@ export const Short: React.FC<ShortProps> = ({
   cta,
   punches,
   ctaStart,
+  layout = "fullbleed",
 }) => {
+  const stacked = layout === "stacked";
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const t = frame / fps;
@@ -103,7 +107,7 @@ export const Short: React.FC<ShortProps> = ({
   const ctaVisible = ctaIn > 0.01;
 
   // Pendant le CTA, les sous-titres remontent pour ne pas se chevaucher
-  const captionBottom = ctaVisible ? 560 : 380;
+  const captionBottom = stacked ? (ctaVisible ? 620 : 440) : ctaVisible ? 560 : 380;
 
   return (
     <AbsoluteFill style={{ backgroundColor: "#000" }}>
@@ -124,23 +128,23 @@ export const Short: React.FC<ShortProps> = ({
       </AbsoluteFill>
 
       {/* Vignettage léger : fait ressortir le texte */}
-      <AbsoluteFill
+      {stacked ? null : <AbsoluteFill
         style={{
           background:
             "radial-gradient(ellipse at 50% 45%, rgba(0,0,0,0) 52%, rgba(0,0,0,0.38) 100%)",
           pointerEvents: "none",
         }}
-      />
+      />}
 
       {/* Voiles dégradés : le texte reste lisible même sur un fond blanc pur
           (flash de la cinématique de mort) ou sur du sable surexposé. */}
-      <AbsoluteFill
+      {stacked ? null : <AbsoluteFill
         style={{
           background:
             "linear-gradient(to bottom, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.18) 13%, rgba(0,0,0,0) 26%)",
           pointerEvents: "none",
         }}
-      />
+      />}
       <AbsoluteFill
         style={{
           background:
@@ -155,7 +159,7 @@ export const Short: React.FC<ShortProps> = ({
           style={{
             justifyContent: "flex-start",
             alignItems: "center",
-            paddingTop: SAFE_TOP + 80,
+            paddingTop: stacked ? 560 : SAFE_TOP + 80,
             paddingLeft: 60,
             paddingRight: 60,
             opacity: hookOpacity,
@@ -164,12 +168,20 @@ export const Short: React.FC<ShortProps> = ({
         >
           <div
             style={{
-              width: "100%",
+              width: stacked ? undefined : "100%",
               maxWidth: 920,
               margin: "0 auto",
+              ...(stacked
+                ? {
+                    backgroundColor: "rgba(10,10,14,0.78)",
+                    borderRadius: 26,
+                    padding: "20px 30px",
+                    borderBottom: `7px solid ${COLORS.accent}`,
+                  }
+                : {}),
               fontFamily: FONT_FAMILY,
               fontWeight: 800,
-              fontSize: 84,
+              fontSize: stacked ? 64 : 84,
               lineHeight: 1.08,
               color: COLORS.text,
               textAlign: "center",

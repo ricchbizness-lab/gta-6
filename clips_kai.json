@@ -149,25 +149,6 @@
   }
  },
  {
-  "id": "k06",
-  "start": 5305.0,
-  "end": 5337.3,
-  "duree": 32.3,
-  "hook": "GTA 6 NPCs chased Kai down",
-  "cta": "[à définir selon le brief de la campagne]",
-  "why": "Un PNJ le poursuit, Kai hésite entre pistolet et couteau pour éviter la police. Montée de tension.",
-  "score": 7,
-  "source_hd": {
-   "vod": "https://www.twitch.tv/videos/2932305259",
-   "morceaux": [
-    [
-     7467.51,
-     7499.81
-    ]
-   ]
-  }
- },
- {
   "id": "k03",
   "start": 3361.0,
   "end": 3386.3,

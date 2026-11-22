@@ -4,6 +4,7 @@ import { Short, type ShortProps } from "./Short";
 import { FPS, HEIGHT, WIDTH } from "./theme";
 import { fontPromise } from "./fonts";
 import meta from "../public/clips-meta.json";
+import kaiMeta from "../public/kai-meta.json";
 
 type ClipMeta = {
   id: string;
@@ -14,9 +15,10 @@ type ClipMeta = {
   cta: string;
   punches: number[];
   ctaStart: number;
+  layout?: "fullbleed" | "stacked";
 };
 
-const clips = meta as ClipMeta[];
+const clips = [...(meta as ClipMeta[]), ...(kaiMeta as ClipMeta[])];
 
 export const RemotionRoot: React.FC = () => {
   return (

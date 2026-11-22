@@ -41,7 +41,11 @@ def merge_elisions(items):
     for it in items:
         w = it["w"]
         glue = w.startswith("'") or w.startswith("-")
-        if out and (glue or out[-1]["w"].endswith("'") or out[-1]["w"].endswith("-")):
+        prev = out[-1]["w"] if out else ""
+        # elision francaise courte (l', c', qu', jusqu'...) ; pas l'argot anglais (gon', nothin')
+        elision_fr = prev.endswith("'") and (len(prev) <= 3 or prev[:-1].lower() in
+                                             ("jusqu", "lorsqu", "puisqu", "quelqu", "presqu"))
+        if out and (glue or elision_fr or prev.endswith("-")):
             out[-1]["w"] += w
             out[-1]["e"] = it["e"]
             continue

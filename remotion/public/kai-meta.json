@@ -1,0 +1,90 @@
+[
+ {
+  "id": "kai-k01",
+  "src": "kai/k01.mp4",
+  "captions": "kai/captions/k01.json",
+  "durationInSeconds": 31.402,
+  "hook": "KAI CENAT PRAYED BEFORE PLAYING GTA 6",
+  "cta": "FOLLOW FOR MORE KAI CENAT GTA 6",
+  "punches": [],
+  "ctaStart": 28.402,
+  "layout": "stacked"
+ },
+ {
+  "id": "kai-k07",
+  "src": "kai/k07.mp4",
+  "captions": "kai/captions/k07.json",
+  "durationInSeconds": 39.402,
+  "hook": "KAI CENAT DUMPED THEM IN THE OCEAN",
+  "cta": "FOLLOW FOR MORE KAI CENAT GTA 6",
+  "punches": [],
+  "ctaStart": 36.402,
+  "layout": "stacked"
+ },
+ {
+  "id": "kai-k08",
+  "src": "kai/k08.mp4",
+  "captions": "kai/captions/k08.json",
+  "durationInSeconds": 45.43,
+  "hook": "KAI CENAT: “IS ANYBODY NICE IN THIS NEIGHBORHOOD?!”",
+  "cta": "FOLLOW FOR MORE KAI CENAT GTA 6",
+  "punches": [],
+  "ctaStart": 42.43,
+  "layout": "stacked"
+ },
+ {
+  "id": "kai-k09",
+  "src": "kai/k09.mp4",
+  "captions": "kai/captions/k09.json",
+  "durationInSeconds": 15.2,
+  "hook": "KAI CENAT ON GTA 6 FLORIDA",
+  "cta": "FOLLOW FOR MORE KAI CENAT GTA 6",
+  "punches": [],
+  "ctaStart": 12.2,
+  "layout": "stacked"
+ },
+ {
+  "id": "kai-k05",
+  "src": "kai/k05.mp4",
+  "captions": "kai/captions/k05.json",
+  "durationInSeconds": 38.208,
+  "hook": "KAI CENAT DOESN'T WANT TO FIGHT",
+  "cta": "FOLLOW FOR MORE KAI CENAT GTA 6",
+  "punches": [],
+  "ctaStart": 35.208,
+  "layout": "stacked"
+ },
+ {
+  "id": "kai-k10",
+  "src": "kai/k10.mp4",
+  "captions": "kai/captions/k10.json",
+  "durationInSeconds": 41.736,
+  "hook": "KAI CENAT TRIED VAPING IN GTA 6",
+  "cta": "FOLLOW FOR MORE KAI CENAT GTA 6",
+  "punches": [],
+  "ctaStart": 38.736,
+  "layout": "stacked"
+ },
+ {
+  "id": "kai-k12",
+  "src": "kai/k12.mp4",
+  "captions": "kai/captions/k12.json",
+  "durationInSeconds": 24.936,
+  "hook": "KAI CENAT KNEW EXACTLY WHAT SCENE THIS WAS",
+  "cta": "FOLLOW FOR MORE KAI CENAT GTA 6",
+  "punches": [],
+  "ctaStart": 21.936,
+  "layout": "stacked"
+ },
+ {
+  "id": "kai-k03",
+  "src": "kai/k03.mp4",
+  "captions": "kai/captions/k03.json",
+  "durationInSeconds": 22.25,
+  "hook": "KAI CENAT PAINTED THE HOUSE FOR LUCIA",
+  "cta": "FOLLOW FOR MORE KAI CENAT GTA 6",
+  "punches": [],
+  "ctaStart": 19.25,
+  "layout": "stacked"
+ }
+]
