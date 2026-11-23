@@ -1,0 +1,259 @@
+[
+ {
+  "id": "neon-vicebeach",
+  "props": {
+   "brand": {
+    "name": "TON PSEUDO",
+    "tagline": "GTA 6 & gaming",
+    "tags": [
+     "GTA 6",
+     "ASTUCES"
+    ],
+    "chapterLabel": "PARTIE",
+    "colors": {
+     "primary": "#22D3EE",
+     "secondary": "#7C3AED",
+     "badge": "#FACC15",
+     "positive": "#4ADE80",
+     "negative": "#F43F5E",
+     "panel": "rgba(8,14,30,0.94)",
+     "text": "#FFFFFF",
+     "grid": "#22D3EE"
+    },
+    "fonts": {
+     "title": "pacifico",
+     "ui": "montserrat"
+    }
+   },
+   "scenes": [
+    {
+     "chapter": 0,
+     "title": "Vice Beach",
+     "card": {
+      "type": "image",
+      "src": "neon/vicebeach/img/s0.jpg"
+     },
+     "start": 0.0,
+     "end": 1.58
+    },
+    {
+     "title": "3 trucs à savoir",
+     "card": {
+      "type": "checklist",
+      "title": "À SAVOIR",
+      "items": [
+       {
+        "label": "Les jet skis",
+        "state": "locked"
+       },
+       {
+        "label": "Les bouées",
+        "state": "locked"
+       },
+       {
+        "label": "La police",
+        "state": "locked"
+       }
+      ]
+     },
+     "chapter": 0,
+     "start": 1.58,
+     "end": 2.9
+    },
+    {
+     "chapter": 1,
+     "flash": true,
+     "title": "Les jet skis",
+     "card": {
+      "type": "badge",
+      "n": 1
+     },
+     "start": 2.9,
+     "end": 3.98
+    },
+    {
+     "title": "Sur l'eau…",
+     "card": {
+      "type": "image",
+      "src": "neon/vicebeach/img/s3.jpg"
+     },
+     "chapter": 1,
+     "start": 3.98,
+     "end": 5.76
+    },
+    {
+     "title": "À louer",
+     "card": {
+      "type": "stat",
+      "icon": "$",
+      "label": "LOCATION",
+      "sub": "Jet ski",
+      "lock": true
+     },
+     "chapter": 1,
+     "start": 5.76,
+     "end": 6.46
+    },
+    {
+     "title": "Paiement",
+     "card": {
+      "type": "stat",
+      "icon": "B$",
+      "label": "BANQUE",
+      "sub": "BuckMe uniquement",
+      "countTo": 0
+     },
+     "chapter": 1,
+     "start": 6.46,
+     "end": 7.66
+    },
+    {
+     "title": "Compte vide ?",
+     "card": {
+      "type": "checklist",
+      "title": "LOCATION",
+      "items": [
+       {
+        "label": "Jet ski",
+        "state": "cross"
+       }
+      ]
+     },
+     "chapter": 1,
+     "start": 7.66,
+     "end": 9.3
+    },
+    {
+     "chapter": 2,
+     "flash": true,
+     "title": "Les bouées",
+     "card": {
+      "type": "badge",
+      "n": 2
+     },
+     "start": 9.3,
+     "end": 10.2
+    },
+    {
+     "title": "Le crocodile",
+     "card": {
+      "type": "image",
+      "src": "neon/vicebeach/img/s8.jpg"
+     },
+     "chapter": 2,
+     "start": 10.2,
+     "end": 11.84
+    },
+    {
+     "title": "Il flotte !",
+     "card": {
+      "type": "checklist",
+      "title": "LA BOUÉE",
+      "items": [
+       {
+        "label": "Se porte",
+        "state": "done"
+       },
+       {
+        "label": "Va à l'eau",
+        "state": "done"
+       },
+       {
+        "label": "Flotte vraiment",
+        "state": "done"
+       }
+      ]
+     },
+     "chapter": 2,
+     "start": 11.84,
+     "end": 14.68
+    },
+    {
+     "chapter": 3,
+     "flash": true,
+     "title": "La police",
+     "card": {
+      "type": "badge",
+      "n": 3
+     },
+     "start": 14.68,
+     "end": 17.38
+    },
+    {
+     "title": "À la nage ?",
+     "card": {
+      "type": "gauge",
+      "left": "FUITE",
+      "right": "ARRESTATION",
+      "value": 0.9,
+      "verdict": "ÇA NE SUFFIT PAS"
+     },
+     "chapter": 3,
+     "start": 17.38,
+     "end": 18.8
+    },
+    {
+     "title": "Bateau de police",
+     "card": {
+      "type": "image",
+      "src": "neon/vicebeach/img/s12.jpg"
+     },
+     "chapter": 3,
+     "start": 18.8,
+     "end": 20.72
+    },
+    {
+     "chapter": 0,
+     "title": "Jet ski ou bouée ?",
+     "card": {
+      "type": "choice",
+      "a": "JET SKI",
+      "b": "BOUÉE"
+     },
+     "start": 20.72,
+     "end": 23.7
+    },
+    {
+     "title": "TON PSEUDO",
+     "card": {
+      "type": "creator"
+     },
+     "chapter": 0,
+     "start": 23.7,
+     "end": 26.076
+    }
+   ],
+   "backgrounds": [
+    {
+     "src": "neon/vicebeach/bg0.mp4",
+     "from": 0.0,
+     "to": 2.9
+    },
+    {
+     "src": "neon/vicebeach/bg1.mp4",
+     "from": 2.9,
+     "to": 9.3
+    },
+    {
+     "src": "neon/vicebeach/bg2.mp4",
+     "from": 9.3,
+     "to": 14.68
+    },
+    {
+     "src": "neon/vicebeach/bg3.mp4",
+     "from": 14.68,
+     "to": 20.72
+    },
+    {
+     "src": "neon/vicebeach/bg4.mp4",
+     "from": 20.72,
+     "to": 26.076
+    }
+   ],
+   "voice": "neon/vicebeach/voice.wav",
+   "captions": "neon/vicebeach/captions.json",
+   "sfx": true,
+   "durationInSeconds": 26.076
+  }
+ }
+]

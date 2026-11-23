@@ -5,6 +5,10 @@ import { FPS, HEIGHT, WIDTH } from "./theme";
 import { fontPromise } from "./fonts";
 import meta from "../public/clips-meta.json";
 import kaiMeta from "../public/kai-meta.json";
+import neonProjects from "../public/neon/projects.json";
+import { NeonShort } from "./neon/NeonShort";
+import { neonFontsReady } from "./neon/fonts";
+import type { NeonProps } from "./neon/types";
 
 type ClipMeta = {
   id: string;
@@ -36,6 +40,22 @@ export const RemotionRoot: React.FC = () => {
           calculateMetadata={async () => {
             // Garantit que la police est chargée avant le premier rendu
             await fontPromise;
+            return {};
+          }}
+        />
+      ))}
+      {(neonProjects as { id: string; props: NeonProps }[]).map((p) => (
+        <Composition
+          key={p.id}
+          id={p.id}
+          component={NeonShort}
+          width={WIDTH}
+          height={HEIGHT}
+          fps={FPS}
+          durationInFrames={Math.ceil(p.props.durationInSeconds * FPS)}
+          defaultProps={p.props}
+          calculateMetadata={async () => {
+            await neonFontsReady;
             return {};
           }}
         />

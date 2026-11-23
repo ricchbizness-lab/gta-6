@@ -1,0 +1,234 @@
+{
+ "lang": "fr",
+ "target_wpm": 290,
+ "voice_text": "Tu vas à Vice Beach dans GTA 6 ? Voilà trois trucs que personne ne te dit. Un, les jet skis. Ils sont posés sur l'eau, mais tu ne peux pas juste les prendre : il faut les louer, et le paiement passe uniquement par BuckMe. Pas d'argent sur ton compte, pas de jet ski. Deux, les bouées. Le crocodile gonflable sur la plage, tu peux le porter, le mettre à l'eau, et il flotte vraiment. Trois, la police ne lâche rien, même sur l'eau. Fuir à la nage ne suffit pas : un bateau de police vient te chercher. Alors, jet ski ou bouée ? Dis-le en commentaire, et abonne-toi pour plus de secrets de GTA 6.",
+ "backgrounds": [
+  {
+   "source": "input/source.mp4",
+   "t": "425"
+  },
+  {
+   "source": "input/source.mp4",
+   "t": "570"
+  },
+  {
+   "source": "input/source.mp4",
+   "t": "666"
+  },
+  {
+   "source": "input/source.mp4",
+   "t": "926"
+  },
+  {
+   "source": "input/source.mp4",
+   "t": "958"
+  }
+ ],
+ "scenes": [
+  {
+   "bg": 0,
+   "chapter": 0,
+   "title": "Vice Beach",
+   "card": {
+    "type": "image",
+    "frame": {
+     "source": "input/source.mp4",
+     "t": "440"
+    }
+   }
+  },
+  {
+   "anchor": "trois trucs",
+   "title": "3 trucs à savoir",
+   "card": {
+    "type": "checklist",
+    "title": "À SAVOIR",
+    "items": [
+     {
+      "label": "Les jet skis",
+      "state": "locked"
+     },
+     {
+      "label": "Les bouées",
+      "state": "locked"
+     },
+     {
+      "label": "La police",
+      "state": "locked"
+     }
+    ]
+   }
+  },
+  {
+   "anchor": "un les",
+   "bg": 1,
+   "chapter": 1,
+   "flash": true,
+   "title": "Les jet skis",
+   "card": {
+    "type": "badge",
+    "n": 1
+   }
+  },
+  {
+   "anchor": "poses sur",
+   "title": "Sur l'eau…",
+   "card": {
+    "type": "image",
+    "frame": {
+     "source": "input/source.mp4",
+     "t": "575"
+    }
+   }
+  },
+  {
+   "anchor": "il faut les louer",
+   "title": "À louer",
+   "card": {
+    "type": "stat",
+    "icon": "$",
+    "label": "LOCATION",
+    "sub": "Jet ski",
+    "lock": true
+   }
+  },
+  {
+   "anchor": "paiement",
+   "title": "Paiement",
+   "card": {
+    "type": "stat",
+    "icon": "B$",
+    "label": "BANQUE",
+    "sub": "BuckMe uniquement",
+    "countTo": 0
+   }
+  },
+  {
+   "anchor": "pas d'argent",
+   "title": "Compte vide ?",
+   "card": {
+    "type": "checklist",
+    "title": "LOCATION",
+    "items": [
+     {
+      "label": "Jet ski",
+      "state": "cross"
+     }
+    ]
+   }
+  },
+  {
+   "anchor": "deux les",
+   "bg": 2,
+   "chapter": 2,
+   "flash": true,
+   "title": "Les bouées",
+   "card": {
+    "type": "badge",
+    "n": 2
+   }
+  },
+  {
+   "anchor": "le crocodile",
+   "title": "Le crocodile",
+   "card": {
+    "type": "image",
+    "frame": {
+     "source": "input/source.mp4",
+     "t": "680"
+    }
+   }
+  },
+  {
+   "anchor": "tu peux le porter",
+   "title": "Il flotte !",
+   "card": {
+    "type": "checklist",
+    "title": "LA BOUÉE",
+    "items": [
+     {
+      "label": "Se porte",
+      "state": "done"
+     },
+     {
+      "label": "Va à l'eau",
+      "state": "done"
+     },
+     {
+      "label": "Flotte vraiment",
+      "state": "done"
+     }
+    ]
+   }
+  },
+  {
+   "anchor": "trois la police",
+   "bg": 3,
+   "chapter": 3,
+   "flash": true,
+   "title": "La police",
+   "card": {
+    "type": "badge",
+    "n": 3
+   }
+  },
+  {
+   "anchor": "fuir a la nage",
+   "title": "À la nage ?",
+   "card": {
+    "type": "gauge",
+    "left": "FUITE",
+    "right": "ARRESTATION",
+    "value": 0.9,
+    "verdict": "ÇA NE SUFFIT PAS"
+   }
+  },
+  {
+   "anchor": "un bateau",
+   "title": "Bateau de police",
+   "card": {
+    "type": "image",
+    "frame": {
+     "source": "input/source.mp4",
+     "t": "942"
+    }
+   }
+  },
+  {
+   "anchor": "alors",
+   "bg": 4,
+   "chapter": 0,
+   "title": "Jet ski ou bouée ?",
+   "card": {
+    "type": "choice",
+    "a": "JET SKI",
+    "b": "BOUÉE"
+   }
+  },
+  {
+   "anchor": "abonne",
+   "title": "TON PSEUDO",
+   "card": {
+    "type": "creator"
+   }
+  }
+ ],
+ "caption_fixes": [
+  [
+   "Buckmy",
+   "BuckMe"
+  ],
+  [
+   "ils flottent vraiment",
+   "il flotte vraiment"
+  ],
+  [
+   "pas de jet skis",
+   "pas de jet ski"
+  ],
+  [
+   "GTA VI,",
+   "GTA 6,"
+  ]
+ ]
+}
