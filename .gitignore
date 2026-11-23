@@ -11,3 +11,7 @@ build/
 gta-videos/
 .venv-tools/
 remotion/public/kai/*.mp4
+# neon-explainer : medias generes par build.py (regenerables, derives des sources)
+remotion/public/neon/*/
+!remotion/public/neon/fonts/
+!remotion/public/neon/sfx/
