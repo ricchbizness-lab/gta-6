@@ -1,0 +1,217 @@
+{
+ "lang": "fr",
+ "target_wpm": 290,
+ "voice_text": "Tu es coincé en pleine mer dans GTA 6 ? Ne panique pas, attends. Un chien en jet ski peut venir te sauver. Un, où : vers Gambit Bay, dans les Keys. Laisse ton bateau et nage au large. Deux, attends quelques minutes. Quand tu entends aboyer, c'est lui. Monte sur son jet ski. Trois, ne descends surtout pas avant l'arrêt complet : il t'emmène sur l'île aux chiens. Joue à la balle avec lui, et il déterre un portefeuille avec environ mille deux cents dollars. Attention, ça peut ne marcher qu'une fois. Alors, tu l'as déjà croisé, ou pas encore ? Dis-le en commentaire, et abonne-toi pour plus de secrets de GTA 6.",
+ "backgrounds": [
+  {
+   "source": "input/source.mp4",
+   "t": "920"
+  },
+  {
+   "source": "input/source.mp4",
+   "t": "700"
+  },
+  {
+   "source": "input/source.mp4",
+   "t": "640"
+  },
+  {
+   "source": "input/source.mp4",
+   "t": "600"
+  },
+  {
+   "source": "input/source.mp4",
+   "t": "1000"
+  }
+ ],
+ "scenes": [
+  {
+   "bg": 0,
+   "chapter": 0,
+   "title": "Coincé en mer ?",
+   "card": {
+    "type": "stat",
+    "icon": "🛟",
+    "label": "Perdu en mer",
+    "sub": "Ne panique pas"
+   }
+  },
+  {
+   "anchor": "un chien",
+   "title": "Un chien en jet ski",
+   "card": {
+    "type": "icon",
+    "glyph": "🐶"
+   }
+  },
+  {
+   "anchor": "un ou",
+   "bg": 1,
+   "chapter": 1,
+   "flash": true,
+   "title": "Gambit Bay",
+   "card": {
+    "type": "badge",
+    "n": 1
+   }
+  },
+  {
+   "anchor": "laisse ton bateau",
+   "title": "Nage au large",
+   "card": {
+    "type": "image",
+    "frame": {
+     "source": "input/source.mp4",
+     "t": "920"
+    }
+   }
+  },
+  {
+   "anchor": "deux attends",
+   "bg": 2,
+   "chapter": 2,
+   "flash": true,
+   "title": "Attends",
+   "card": {
+    "type": "badge",
+    "n": 2
+   }
+  },
+  {
+   "anchor": "quand tu entends",
+   "title": "Ouaf ouaf !",
+   "card": {
+    "type": "stat",
+    "icon": "🔊",
+    "label": "Des aboiements",
+    "sub": "C'est lui"
+   }
+  },
+  {
+   "anchor": "monte sur",
+   "title": "Monte derrière lui",
+   "card": {
+    "type": "icon",
+    "glyph": "🐶🚤"
+   }
+  },
+  {
+   "anchor": "trois ne",
+   "bg": 3,
+   "chapter": 3,
+   "flash": true,
+   "title": "Reste dessus",
+   "card": {
+    "type": "badge",
+    "n": 3
+   }
+  },
+  {
+   "anchor": "il t'emmene",
+   "title": "L'île aux chiens",
+   "card": {
+    "type": "icon",
+    "glyph": "🏝️"
+   }
+  },
+  {
+   "anchor": "joue a la balle",
+   "title": "Joue avec lui",
+   "card": {
+    "type": "checklist",
+    "title": "SUR L'ÎLE",
+    "items": [
+     {
+      "label": "Jouer à la balle",
+      "state": "done"
+     },
+     {
+      "label": "Il creuse…",
+      "state": "done"
+     }
+    ]
+   }
+  },
+  {
+   "anchor": "portefeuille",
+   "title": "Le jackpot",
+   "card": {
+    "type": "stat",
+    "icon": "💰",
+    "label": "Portefeuille",
+    "sub": "Environ",
+    "countTo": 1200
+   }
+  },
+  {
+   "anchor": "attention",
+   "title": "Une seule fois ?",
+   "card": {
+    "type": "stat",
+    "icon": "⚠️",
+    "label": "Pas garanti",
+    "sub": "Peut-être une seule fois"
+   }
+  },
+  {
+   "anchor": "alors",
+   "bg": 4,
+   "chapter": 0,
+   "title": "Déjà croisé ?",
+   "card": {
+    "type": "choice",
+    "a": "OUI",
+    "b": "PAS ENCORE"
+   }
+  },
+  {
+   "anchor": "abonne",
+   "title": "satisfayingmeplease",
+   "card": {
+    "type": "creator"
+   }
+  }
+ ],
+ "caption_fixes": [
+  [
+   "GTA VI",
+   "GTA 6"
+  ],
+  [
+   "Buck Me",
+   "BuckMe"
+  ],
+  [
+   "De attends",
+   "Deux, attends"
+  ],
+  [
+   "Montez sur",
+   "Monte sur"
+  ],
+  [
+   "Trois ne descend",
+   "Trois, ne descends"
+  ],
+  [
+   "Ils t'emmènent",
+   "Il t'emmène"
+  ],
+  [
+   "un ou vergan bidbe dans les quizes",
+   "Un, où? Vers Gambit Bay, dans les Keys."
+  ],
+  [
+   "au chien",
+   "aux chiens."
+  ],
+  [
+   "détère",
+   "déterre"
+  ],
+  [
+   "1200",
+   "1 200"
+  ]
+ ]
+}
