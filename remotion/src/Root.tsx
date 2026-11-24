@@ -7,6 +7,7 @@ import meta from "../public/clips-meta.json";
 import kaiMeta from "../public/kai-meta.json";
 import neonProjects from "../public/neon/projects.json";
 import { NeonShort } from "./neon/NeonShort";
+import { NeonThumb } from "./neon/Thumb";
 import { neonFontsReady } from "./neon/fonts";
 import type { NeonProps } from "./neon/types";
 
@@ -54,6 +55,22 @@ export const RemotionRoot: React.FC = () => {
           fps={FPS}
           durationInFrames={Math.ceil(p.props.durationInSeconds * FPS)}
           defaultProps={p.props}
+          calculateMetadata={async () => {
+            await neonFontsReady;
+            return {};
+          }}
+        />
+      ))}
+      {(neonProjects as { id: string; props: NeonProps }[]).filter((p) => p.props.thumb).map((p) => (
+        <Composition
+          key={`${p.id}-thumb`}
+          id={`${p.id}-thumb`}
+          component={NeonThumb}
+          width={WIDTH}
+          height={HEIGHT}
+          fps={FPS}
+          durationInFrames={1}
+          defaultProps={{ brand: p.props.brand, thumb: p.props.thumb! }}
           calculateMetadata={async () => {
             await neonFontsReady;
             return {};

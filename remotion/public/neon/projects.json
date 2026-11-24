@@ -257,258 +257,6 @@
   }
  },
  {
-  "id": "neon-chapitre1",
-  "props": {
-   "brand": {
-    "name": "satisfayingmeplease",
-    "tagline": "GTA 6 & gaming",
-    "tags": [
-     "GTA 6",
-     "ASTUCES"
-    ],
-    "chapterLabel": "PARTIE",
-    "colors": {
-     "primary": "#22D3EE",
-     "secondary": "#7C3AED",
-     "badge": "#FACC15",
-     "positive": "#4ADE80",
-     "negative": "#F43F5E",
-     "panel": "rgba(8,14,30,0.94)",
-     "text": "#FFFFFF",
-     "grid": "#22D3EE"
-    },
-    "fonts": {
-     "title": "pacifico",
-     "ui": "montserrat"
-    }
-   },
-   "scenes": [
-    {
-     "chapter": 0,
-     "title": "Attention !",
-     "card": {
-      "type": "stat",
-      "icon": "!",
-      "label": "Tourist Trap",
-      "sub": "Point de non-retour",
-      "lock": true
-     },
-     "start": 0.0,
-     "end": 3.4
-    },
-    {
-     "title": "Fin du chapitre 1",
-     "card": {
-      "type": "checklist",
-      "title": "LE JEU TE REPREND",
-      "items": [
-       {
-        "label": "Presque tout",
-        "state": "cross"
-       }
-      ]
-     },
-     "chapter": 0,
-     "start": 3.4,
-     "end": 5.44
-    },
-    {
-     "chapter": 1,
-     "flash": true,
-     "title": "Ce que tu perds",
-     "card": {
-      "type": "badge",
-      "n": 1
-     },
-     "start": 5.44,
-     "end": 6.42
-    },
-    {
-     "card": {
-      "type": "checklist",
-      "title": "PERDU",
-      "items": [
-       {
-        "label": "Le cash sur toi",
-        "state": "cross"
-       },
-       {
-        "label": "La planque du plancher",
-        "state": "cross"
-       },
-       {
-        "label": "Ton compte BuckMe",
-        "state": "cross"
-       },
-       {
-        "label": "La voiture de Jason",
-        "state": "cross"
-       }
-      ]
-     },
-     "title": "Ce que tu perds",
-     "chapter": 1,
-     "start": 6.42,
-     "end": 8.94
-    },
-    {
-     "title": "La voiture de Jason",
-     "card": {
-      "type": "image",
-      "src": "neon/chapitre1/img/s4.jpg"
-     },
-     "chapter": 1,
-     "start": 8.94,
-     "end": 9.82
-    },
-    {
-     "chapter": 2,
-     "flash": true,
-     "title": "Ce qui survit",
-     "card": {
-      "type": "badge",
-      "n": 2
-     },
-     "start": 9.82,
-     "end": 10.9
-    },
-    {
-     "title": "Un seul compte",
-     "card": {
-      "type": "stat",
-      "icon": "B$",
-      "label": "Family Savings",
-      "sub": "Le seul qui survit"
-     },
-     "chapter": 2,
-     "start": 10.9,
-     "end": 12.4
-    },
-    {
-     "chapter": 3,
-     "flash": true,
-     "title": "Comment le remplir",
-     "card": {
-      "type": "badge",
-      "n": 3
-     },
-     "start": 12.4,
-     "end": 13.44
-    },
-    {
-     "title": "Au distributeur",
-     "card": {
-      "type": "stat",
-      "icon": "$",
-      "label": "Distributeur",
-      "sub": "Dépose ton cash"
-     },
-     "chapter": 3,
-     "start": 13.44,
-     "end": 14.86
-    },
-    {
-     "title": "Dans l'appli",
-     "card": {
-      "type": "phone",
-      "app": "BuckMe",
-      "steps": [
-       "Compte courant",
-       "Buck Yourself",
-       "Family Savings"
-      ],
-      "stepEvery": 0.55
-     },
-     "chapter": 3,
-     "start": 14.86,
-     "end": 17.04
-    },
-    {
-     "title": "Maximum",
-     "card": {
-      "type": "stat",
-      "icon": "B$",
-      "label": "Family Savings",
-      "sub": "Impossible à retirer",
-      "countTo": 5000,
-      "lock": true
-     },
-     "chapter": 3,
-     "start": 17.04,
-     "end": 19.86
-    },
-    {
-     "chapter": 0,
-     "flash": true,
-     "title": "Bonus",
-     "card": {
-      "type": "checklist",
-      "title": "AVANT LA MISSION",
-      "items": [
-       {
-        "label": "Sauvegarde manuelle",
-        "state": "done"
-       }
-      ]
-     },
-     "start": 19.86,
-     "end": 22.08
-    },
-    {
-     "title": "À temps ou trop tard ?",
-     "card": {
-      "type": "choice",
-      "a": "À TEMPS",
-      "b": "TOUT PERDU"
-     },
-     "chapter": 0,
-     "start": 22.08,
-     "end": 25.04
-    },
-    {
-     "title": "satisfayingmeplease",
-     "card": {
-      "type": "creator"
-     },
-     "chapter": 0,
-     "start": 25.04,
-     "end": 27.762
-    }
-   ],
-   "backgrounds": [
-    {
-     "src": "neon/chapitre1/bg0.mp4",
-     "from": 0.0,
-     "to": 5.44
-    },
-    {
-     "src": "neon/chapitre1/bg1.mp4",
-     "from": 5.44,
-     "to": 9.82
-    },
-    {
-     "src": "neon/chapitre1/bg2.mp4",
-     "from": 9.82,
-     "to": 12.4
-    },
-    {
-     "src": "neon/chapitre1/bg3.mp4",
-     "from": 12.4,
-     "to": 19.86
-    },
-    {
-     "src": "neon/chapitre1/bg4.mp4",
-     "from": 19.86,
-     "to": 27.762
-    }
-   ],
-   "voice": "neon/chapitre1/voice.wav",
-   "captions": "neon/chapitre1/captions.json",
-   "sfx": true,
-   "durationInSeconds": 27.762
-  }
- },
- {
   "id": "neon-chienjetski",
   "props": {
    "brand": {
@@ -732,6 +480,286 @@
    "captions": "neon/chienjetski/captions.json",
    "sfx": true,
    "durationInSeconds": 25.451
+  }
+ },
+ {
+  "id": "neon-chapitre1",
+  "props": {
+   "brand": {
+    "name": "satisfayingmeplease",
+    "tagline": "GTA 6 & gaming",
+    "tags": [
+     "GTA 6",
+     "ASTUCES"
+    ],
+    "chapterLabel": "PARTIE",
+    "colors": {
+     "primary": "#22D3EE",
+     "secondary": "#7C3AED",
+     "badge": "#FACC15",
+     "positive": "#4ADE80",
+     "negative": "#F43F5E",
+     "panel": "rgba(8,14,30,0.94)",
+     "text": "#FFFFFF",
+     "grid": "#22D3EE"
+    },
+    "fonts": {
+     "title": "pacifico",
+     "ui": "montserrat"
+    }
+   },
+   "scenes": [
+    {
+     "chapter": 0,
+     "title": "Attention !",
+     "card": {
+      "type": "stat",
+      "icon": "!",
+      "label": "Tourist Trap",
+      "sub": "Point de non-retour",
+      "lock": true
+     },
+     "start": 0.0,
+     "end": 3.4
+    },
+    {
+     "title": "Fin du chapitre 1",
+     "card": {
+      "type": "checklist",
+      "title": "LE JEU TE REPREND",
+      "items": [
+       {
+        "label": "Presque tout",
+        "state": "cross"
+       }
+      ]
+     },
+     "chapter": 0,
+     "start": 3.4,
+     "end": 5.44
+    },
+    {
+     "chapter": 1,
+     "flash": true,
+     "title": "Ce que tu perds",
+     "card": {
+      "type": "badge",
+      "n": 1
+     },
+     "start": 5.44,
+     "end": 6.42
+    },
+    {
+     "title": "Le cash sur toi",
+     "card": {
+      "type": "image",
+      "src": "neon/ext_chapitre1/gb_cashcar.jpg",
+      "caption": "Image : GTABase"
+     },
+     "chapter": 1,
+     "start": 6.42,
+     "end": 7.2
+    },
+    {
+     "title": "La planque",
+     "card": {
+      "type": "image",
+      "src": "neon/ext_chapitre1/gb_bedroom.jpg",
+      "caption": "Image : GTABase"
+     },
+     "chapter": 1,
+     "start": 7.2,
+     "end": 8.1
+    },
+    {
+     "title": "Ton compte BuckMe",
+     "card": {
+      "type": "image",
+      "src": "neon/ext_chapitre1/gb_phone.jpg",
+      "caption": "Image : GTABase"
+     },
+     "chapter": 1,
+     "start": 8.1,
+     "end": 8.94
+    },
+    {
+     "title": "La voiture de Jason",
+     "card": {
+      "type": "image",
+      "src": "neon/ext_chapitre1/ol_ganado.jpg",
+      "caption": "Image : Output Lag"
+     },
+     "chapter": 1,
+     "start": 8.94,
+     "end": 9.82
+    },
+    {
+     "chapter": 2,
+     "flash": true,
+     "title": "Ce qui survit",
+     "card": {
+      "type": "badge",
+      "n": 2
+     },
+     "start": 9.82,
+     "end": 10.9
+    },
+    {
+     "title": "Un seul compte",
+     "card": {
+      "type": "stat",
+      "icon": "B$",
+      "label": "Family Savings",
+      "sub": "Le seul qui survit"
+     },
+     "chapter": 2,
+     "start": 10.9,
+     "end": 12.4
+    },
+    {
+     "chapter": 3,
+     "flash": true,
+     "title": "Comment le remplir",
+     "card": {
+      "type": "badge",
+      "n": 3
+     },
+     "start": 12.4,
+     "end": 13.44
+    },
+    {
+     "title": "Au distributeur",
+     "card": {
+      "type": "stat",
+      "icon": "$",
+      "label": "Distributeur",
+      "sub": "Dépose ton cash"
+     },
+     "chapter": 3,
+     "start": 13.44,
+     "end": 14.86
+    },
+    {
+     "title": "Dans l'appli",
+     "card": {
+      "type": "phone",
+      "app": "BuckMe",
+      "steps": [
+       "Compte courant",
+       "Buck Yourself",
+       "Family Savings"
+      ],
+      "stepEvery": 0.55
+     },
+     "chapter": 3,
+     "start": 14.86,
+     "end": 17.04
+    },
+    {
+     "title": "Maximum",
+     "card": {
+      "type": "stat",
+      "icon": "B$",
+      "label": "Family Savings",
+      "sub": "Impossible à retirer",
+      "countTo": 5000,
+      "lock": true
+     },
+     "chapter": 3,
+     "start": 17.04,
+     "end": 19.86
+    },
+    {
+     "chapter": 0,
+     "flash": true,
+     "title": "Bonus",
+     "card": {
+      "type": "checklist",
+      "title": "AVANT LA MISSION",
+      "items": [
+       {
+        "label": "Sauvegarde manuelle",
+        "state": "done"
+       }
+      ]
+     },
+     "start": 19.86,
+     "end": 22.08
+    },
+    {
+     "title": "À temps ou trop tard ?",
+     "card": {
+      "type": "choice",
+      "a": "À TEMPS",
+      "b": "TOUT PERDU"
+     },
+     "chapter": 0,
+     "start": 22.08,
+     "end": 25.04
+    },
+    {
+     "title": "satisfayingmeplease",
+     "card": {
+      "type": "creator"
+     },
+     "chapter": 0,
+     "start": 25.04,
+     "end": 27.762
+    }
+   ],
+   "backgrounds": [
+    {
+     "src": "neon/chapitre1/bg0.mp4",
+     "from": 0.0,
+     "to": 5.44
+    },
+    {
+     "src": "neon/chapitre1/bg1.mp4",
+     "from": 5.44,
+     "to": 9.82
+    },
+    {
+     "src": "neon/chapitre1/bg2.mp4",
+     "from": 9.82,
+     "to": 12.4
+    },
+    {
+     "src": "neon/chapitre1/bg3.mp4",
+     "from": 12.4,
+     "to": 19.86
+    },
+    {
+     "src": "neon/chapitre1/bg4.mp4",
+     "from": 19.86,
+     "to": 27.762
+    }
+   ],
+   "voice": "neon/chapitre1/voice.wav",
+   "captions": "neon/chapitre1/captions.json",
+   "sfx": true,
+   "durationInSeconds": 27.762,
+   "thumb": {
+    "image": "neon/ext_chapitre1/ol_cash.jpg",
+    "focus": "72% 40%",
+    "kicker": "GTA 6",
+    "arrow": false,
+    "lines": [
+     {
+      "text": "NE LANCE PAS",
+      "size": 170
+     },
+     {
+      "text": "TOURIST TRAP",
+      "color": "negative",
+      "size": 205
+     },
+     {
+      "text": "SINON TU PERDS TOUT",
+      "color": "primary",
+      "size": 118
+     }
+    ]
+   }
   }
  }
 ]

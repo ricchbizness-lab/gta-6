@@ -64,39 +64,38 @@
   },
   {
    "anchor": "le cash",
+   "title": "Le cash sur toi",
    "card": {
-    "type": "checklist",
-    "title": "PERDU",
-    "items": [
-     {
-      "label": "Le cash sur toi",
-      "state": "cross"
-     },
-     {
-      "label": "La planque du plancher",
-      "state": "cross"
-     },
-     {
-      "label": "Ton compte BuckMe",
-      "state": "cross"
-     },
-     {
-      "label": "La voiture de Jason",
-      "state": "cross"
-     }
-    ]
-   },
-   "title": "Ce que tu perds"
+    "type": "image",
+    "src": "neon/ext_chapitre1/gb_cashcar.jpg",
+    "caption": "Image : GTABase"
+   }
+  },
+  {
+   "anchor": "la planque",
+   "title": "La planque",
+   "card": {
+    "type": "image",
+    "src": "neon/ext_chapitre1/gb_bedroom.jpg",
+    "caption": "Image : GTABase"
+   }
+  },
+  {
+   "anchor": "ton compte",
+   "title": "Ton compte BuckMe",
+   "card": {
+    "type": "image",
+    "src": "neon/ext_chapitre1/gb_phone.jpg",
+    "caption": "Image : GTABase"
+   }
   },
   {
    "anchor": "la voiture de jason",
    "title": "La voiture de Jason",
    "card": {
     "type": "image",
-    "frame": {
-     "source": "input/source.mp4",
-     "t": "20"
-    }
+    "src": "neon/ext_chapitre1/ol_ganado.jpg",
+    "caption": "Image : Output Lag"
    }
   },
   {
@@ -234,5 +233,27 @@
    "Bonus fait",
    "Bonus, fais"
   ]
- ]
+ ],
+ "thumb": {
+  "image": "neon/ext_chapitre1/ol_cash.jpg",
+  "focus": "72% 40%",
+  "kicker": "GTA 6",
+  "arrow": false,
+  "lines": [
+   {
+    "text": "NE LANCE PAS",
+    "size": 170
+   },
+   {
+    "text": "TOURIST TRAP",
+    "color": "negative",
+    "size": 205
+   },
+   {
+    "text": "SINON TU PERDS TOUT",
+    "color": "primary",
+    "size": 118
+   }
+  ]
+ }
 }

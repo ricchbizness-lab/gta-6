@@ -47,6 +47,21 @@ On reproduit les **codes** (rythme, structure, mise en page), jamais les assets 
    4 frames verifiees ; sous-titres = texte de la voix ; question + abonne-toi presents.
 8. Livrer `out/neon/<id>.mp4` + `out/neon/<id>.txt` (titre, description, hashtags).
 
+## Images des sources (regle validee par l'humain)
+- Des qu'un article source contient de vraies captures du jeu, on les met dans la video (carte `image` avec
+  `src` + `caption: "Image : <auteur reel>"`). Lire les legendes : creditter l'auteur de la capture
+  (ex. la chaine YouTube citee), pas seulement le site.
+- Ecarter : images generees par IA (illustrations "trop belles", texte incruste), captures d'articles, logos.
+- Domaines bloques : proposer l'ajout exact du domaine a l'environnement (update_environment), jamais de contournement.
+- Fichiers dans `remotion/public/neon/ext_<id>/` (ignore par git : on ne committe pas les images de tiers).
+- Avec credit, l'image fait 450 px de haut (sinon 520) pour ne pas toucher les sous-titres.
+
+## Miniature + intro (facon Kai)
+- `script.json` -> `thumb` : `{image, focus, kicker, lines:[{text, color: white|primary|badge|negative, size, font}], arrow}`.
+  3 lignes max, une idee : l'interdit / la consequence. Verifier que la phrase dit bien la meme chose que l'astuce.
+- `bash tools/neon/intro.sh <id>` : rend `out/neon/<id>_miniature.png` (couverture a uploader) et
+  `out/neon/<id>_intro.mp4` (miniature 0,9 s -> flash blanc -> video). A lancer apres render.sh.
+
 ## Zones (1080x1920, ne pas deplacer sans raison)
 Pastille partie y190-310 · titre neon y470-760 · carte y820 (badge y760), hauteur max ~550 ·
 sous-titres bas a y1490 (1-3 mots, mot a venir en transparence) · grille synthwave y1540-1920.

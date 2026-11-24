@@ -56,4 +56,15 @@ export type NeonProps = {
   musicVolume?: number;
   sfx: boolean;
   durationInSeconds: number;
+  thumb?: Thumb;
+};
+
+// Miniature verticale (couverture TikTok + intro de 0,9 s avant la video)
+export type ThumbLine = { text: string; color?: "white" | "primary" | "badge" | "negative"; size?: number; font?: "ui" | "bebas" | "title" };
+export type Thumb = {
+  image: string; // chemin dans public/
+  focus?: string; // object-position, ex. "40% 30%"
+  kicker?: string; // pastille du haut, ex. "GTA 6"
+  lines: ThumbLine[];
+  arrow?: boolean; // fleche rouge vers l'image
 };
