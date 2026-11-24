@@ -479,7 +479,30 @@
    "voice": "neon/chienjetski/voice.wav",
    "captions": "neon/chienjetski/captions.json",
    "sfx": true,
-   "durationInSeconds": 25.451
+   "durationInSeconds": 25.451,
+   "thumb": {
+    "image": "neon/ext_chienjetski/v3-chiens-plage.jpg",
+    "focus": "47% 50%",
+    "kicker": "GTA 6",
+    "credit": "Image : GosuNoob (YouTube)",
+    "lines": [
+     {
+      "text": "UN CHIEN EN JET SKI",
+      "size": 128
+     },
+     {
+      "text": "TE SAUVE",
+      "color": "primary",
+      "size": 240
+     },
+     {
+      "text": "ET TE DONNE 1 200 $",
+      "color": "secondary",
+      "size": 118
+     }
+    ],
+    "kickerAlign": "right"
+   }
   }
  },
  {
@@ -750,12 +773,12 @@
      },
      {
       "text": "TOURIST TRAP",
-      "color": "negative",
+      "color": "primary",
       "size": 205
      },
      {
       "text": "SINON TU PERDS TOUT",
-      "color": "primary",
+      "color": "secondary",
       "size": 118
      }
     ]

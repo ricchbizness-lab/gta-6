@@ -58,7 +58,9 @@ On reproduit les **codes** (rythme, structure, mise en page), jamais les assets 
 
 ## Miniature + intro (facon Kai)
 - `script.json` -> `thumb` : `{image, focus, kicker, lines:[{text, color: white|primary|badge|negative, size, font}], arrow}`.
-  3 lignes max, une idee : l'interdit / la consequence. Verifier que la phrase dit bien la meme chose que l'astuce.
+  3 lignes max, une idee : l'interdit / la consequence. Couleurs de la MARQUE uniquement : mot cle en `primary`
+  (neon), ligne d'appui en `secondary` (halo violet), le reste en blanc ; pastille = secondary + liseré primary.
+  Pas de jaune/rouge en gros (badge/negative = petits accents). `kickerAlign` pour ne jamais masquer un visage. Verifier que la phrase dit bien la meme chose que l'astuce.
 - `bash tools/neon/intro.sh <id>` : rend `out/neon/<id>_miniature.png` (couverture a uploader) et
   `out/neon/<id>_intro.mp4` (miniature 0,9 s -> flash blanc -> video). A lancer apres render.sh.
 

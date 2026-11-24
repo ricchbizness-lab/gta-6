@@ -246,12 +246,12 @@
    },
    {
     "text": "TOURIST TRAP",
-    "color": "negative",
+    "color": "primary",
     "size": 205
    },
    {
     "text": "SINON TU PERDS TOUT",
-    "color": "primary",
+    "color": "secondary",
     "size": 118
    }
   ]
