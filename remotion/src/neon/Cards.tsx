@@ -202,8 +202,8 @@ export const CardView: React.FC<{ brand: Brand; card: Card; localFrame: number }
     case "image":
       return wrap(
         <Panel brand={brand} style={{ padding: 14 }}>
-          <Img src={staticFile(card.src)} style={{ width: "100%", height: 520, objectFit: "cover", borderRadius: 22, display: "block" }} />
-          {card.caption && <div style={{ textAlign: "center", fontWeight: 900, fontSize: 36, marginTop: 12 }}>{card.caption}</div>}
+          <Img src={staticFile(card.src)} style={{ width: "100%", height: card.caption ? 450 : 520, objectFit: "cover", borderRadius: 22, display: "block" }} />
+          {card.caption && <div style={{ textAlign: "center", fontWeight: 700, fontSize: 26, marginTop: 8, opacity: 0.85 }}>{card.caption}</div>}
         </Panel>,
       );
     case "choice": {

@@ -110,30 +110,31 @@
    "anchor": "il t'emmene",
    "title": "L'île aux chiens",
    "card": {
-    "type": "icon",
-    "glyph": "🏝️"
+    "type": "image",
+    "src": "neon/ext_chienjetski/v1-ile-plage-chiens.jpg",
+    "caption": "Image : GosuNoob (YouTube)"
    }
   },
   {
    "anchor": "joue a la balle",
    "title": "Joue avec lui",
    "card": {
-    "type": "checklist",
-    "title": "SUR L'ÎLE",
-    "items": [
-     {
-      "label": "Jouer à la balle",
-      "state": "done"
-     },
-     {
-      "label": "Il creuse…",
-      "state": "done"
-     }
-    ]
+    "type": "image",
+    "src": "neon/ext_chienjetski/v3-chiens-plage.jpg",
+    "caption": "Image : GosuNoob (YouTube)"
    }
   },
   {
-   "anchor": "portefeuille",
+   "anchor": "il deterre",
+   "title": "Il déterre…",
+   "card": {
+    "type": "image",
+    "src": "neon/ext_chienjetski/v2-portefeuille.jpg",
+    "caption": "Image : GosuNoob (YouTube)"
+   }
+  },
+  {
+   "anchor": "environ",
    "title": "Le jackpot",
    "card": {
     "type": "stat",
