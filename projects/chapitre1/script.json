@@ -1,0 +1,238 @@
+{
+ "lang": "fr",
+ "target_wpm": 290,
+ "voice_text": "Tu joues à GTA 6 ? Ne lance surtout pas la mission Tourist Trap avant d'avoir vu ça. À la fin du chapitre un, le jeu te reprend presque tout. Un, ce que tu perds : le cash sur toi, la planque sous le plancher, ton compte BuckMe, et la voiture de Jason. Deux, ce qui survit : un seul compte, Family Savings. Trois, comment le remplir : dépose ton cash au distributeur, puis dans l'appli BuckMe, compte courant, Buck Yourself. Jusqu'à cinq mille dollars. Mais attention, cet argent ne se retire plus. Bonus : fais une sauvegarde manuelle avant la mission. Alors, tu l'as su à temps, ou tu as tout perdu ? Dis-le en commentaire, et abonne-toi pour plus de secrets de GTA 6.",
+ "backgrounds": [
+  {
+   "source": "input/source.mp4",
+   "t": "8"
+  },
+  {
+   "source": "input/source.mp4",
+   "t": "60"
+  },
+  {
+   "source": "input/source.mp4",
+   "t": "130"
+  },
+  {
+   "source": "input/source.mp4",
+   "t": "205"
+  },
+  {
+   "source": "input/source.mp4",
+   "t": "300"
+  }
+ ],
+ "scenes": [
+  {
+   "bg": 0,
+   "chapter": 0,
+   "title": "Attention !",
+   "card": {
+    "type": "stat",
+    "icon": "!",
+    "label": "Tourist Trap",
+    "sub": "Point de non-retour",
+    "lock": true
+   }
+  },
+  {
+   "anchor": "a la fin",
+   "title": "Fin du chapitre 1",
+   "card": {
+    "type": "checklist",
+    "title": "LE JEU TE REPREND",
+    "items": [
+     {
+      "label": "Presque tout",
+      "state": "cross"
+     }
+    ]
+   }
+  },
+  {
+   "anchor": "1 ce que",
+   "bg": 1,
+   "chapter": 1,
+   "flash": true,
+   "title": "Ce que tu perds",
+   "card": {
+    "type": "badge",
+    "n": 1
+   }
+  },
+  {
+   "anchor": "le cash",
+   "card": {
+    "type": "checklist",
+    "title": "PERDU",
+    "items": [
+     {
+      "label": "Le cash sur toi",
+      "state": "cross"
+     },
+     {
+      "label": "La planque du plancher",
+      "state": "cross"
+     },
+     {
+      "label": "Ton compte BuckMe",
+      "state": "cross"
+     },
+     {
+      "label": "La voiture de Jason",
+      "state": "cross"
+     }
+    ]
+   },
+   "title": "Ce que tu perds"
+  },
+  {
+   "anchor": "la voiture de jason",
+   "title": "La voiture de Jason",
+   "card": {
+    "type": "image",
+    "frame": {
+     "source": "input/source.mp4",
+     "t": "20"
+    }
+   }
+  },
+  {
+   "anchor": "2 ce qui",
+   "bg": 2,
+   "chapter": 2,
+   "flash": true,
+   "title": "Ce qui survit",
+   "card": {
+    "type": "badge",
+    "n": 2
+   }
+  },
+  {
+   "anchor": "un seul compte",
+   "title": "Un seul compte",
+   "card": {
+    "type": "stat",
+    "icon": "B$",
+    "label": "Family Savings",
+    "sub": "Le seul qui survit"
+   }
+  },
+  {
+   "anchor": "3 comment",
+   "bg": 3,
+   "chapter": 3,
+   "flash": true,
+   "title": "Comment le remplir",
+   "card": {
+    "type": "badge",
+    "n": 3
+   }
+  },
+  {
+   "anchor": "depose ton",
+   "title": "Au distributeur",
+   "card": {
+    "type": "stat",
+    "icon": "$",
+    "label": "Distributeur",
+    "sub": "Dépose ton cash"
+   }
+  },
+  {
+   "anchor": "dans l'appli",
+   "title": "Dans l'appli",
+   "card": {
+    "type": "phone",
+    "app": "BuckMe",
+    "steps": [
+     "Compte courant",
+     "Buck Yourself",
+     "Family Savings"
+    ],
+    "stepEvery": 0.55
+   }
+  },
+  {
+   "anchor": "jusqu'a",
+   "title": "Maximum",
+   "card": {
+    "type": "stat",
+    "icon": "B$",
+    "label": "Family Savings",
+    "sub": "Impossible à retirer",
+    "countTo": 5000,
+    "lock": true
+   }
+  },
+  {
+   "anchor": "bonus",
+   "bg": 4,
+   "chapter": 0,
+   "flash": true,
+   "title": "Bonus",
+   "card": {
+    "type": "checklist",
+    "title": "AVANT LA MISSION",
+    "items": [
+     {
+      "label": "Sauvegarde manuelle",
+      "state": "done"
+     }
+    ]
+   }
+  },
+  {
+   "anchor": "alors",
+   "title": "À temps ou trop tard ?",
+   "card": {
+    "type": "choice",
+    "a": "À TEMPS",
+    "b": "TOUT PERDU"
+   }
+  },
+  {
+   "anchor": "abonne",
+   "title": "satisfayingmeplease",
+   "card": {
+    "type": "creator"
+   }
+  }
+ ],
+ "caption_fixes": [
+  [
+   "Buckmy",
+   "BuckMe"
+  ],
+  [
+   "GTA VI",
+   "GTA 6"
+  ],
+  [
+   "Le cache sur",
+   "Le cash sur"
+  ],
+  [
+   "ton cache au",
+   "ton cash au"
+  ],
+  [
+   "Buck Me",
+   "BuckMe"
+  ],
+  [
+   "GTA 6 ne",
+   "GTA 6? Ne"
+  ],
+  [
+   "A la fin",
+   "À la fin"
+  ],
+  [
+   "Bonus fait",
+   "Bonus, fais"
+  ]
+ ]
+}

@@ -32,6 +32,7 @@ export type Card =
   | { type: "image"; src: string; caption?: string }
   | { type: "choice"; a: string; b: string }
   | { type: "icon"; glyph: string; color?: string }
+  | { type: "phone"; app: string; steps: string[]; stepEvery?: number }
   | { type: "creator" };
 
 export type Scene = {

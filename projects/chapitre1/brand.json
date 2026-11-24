@@ -1,0 +1,17 @@
+{
+  "name": "satisfayingmeplease",
+  "tagline": "GTA 6 & gaming",
+  "tags": ["GTA 6", "ASTUCES"],
+  "chapterLabel": "PARTIE",
+  "colors": {
+    "primary": "#22D3EE",
+    "secondary": "#7C3AED",
+    "badge": "#FACC15",
+    "positive": "#4ADE80",
+    "negative": "#F43F5E",
+    "panel": "rgba(8,14,30,0.94)",
+    "text": "#FFFFFF",
+    "grid": "#22D3EE"
+  },
+  "fonts": { "title": "pacifico", "ui": "montserrat" }
+}

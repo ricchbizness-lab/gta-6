@@ -232,6 +232,30 @@ export const CardView: React.FC<{ brand: Brand; card: Card; localFrame: number }
           {card.glyph}
         </div>,
       );
+    case "phone": {
+      // Telephone stylise : les etapes de l'appli s'allument une par une (tap + coche).
+      const every = (card.stepEvery ?? 0.6) * fps;
+      const active = Math.floor(Math.max(0, f - 8) / every);
+      return wrap(
+        <div style={{ width: 470, height: 540, borderRadius: 54, border: `8px solid ${brand.colors.primary}`, background: "#06070d", boxShadow: `0 0 34px ${brand.colors.primary}99, 0 18px 40px rgba(0,0,0,0.6)`, padding: 18, fontFamily: UI_FONT, color: "#fff", position: "relative", overflow: "hidden" }}>
+          <div style={{ width: 120, height: 14, borderRadius: 8, background: "#1b1e2b", margin: "0 auto 16px" }} />
+          <div style={{ borderRadius: 22, padding: "18px 22px", background: `linear-gradient(90deg, ${brand.colors.secondary}, ${brand.colors.primary})`, fontWeight: 900, fontSize: 40, letterSpacing: 1 }}>{card.app}</div>
+          <div style={{ display: "flex", flexDirection: "column", gap: 14, marginTop: 18 }}>
+            {card.steps.map((st, i) => {
+              const on = i <= active;
+              const cur = i === active;
+              const sp = pop(f, fps, 8 + i * every);
+              return (
+                <div key={i} style={{ display: "flex", alignItems: "center", gap: 16, padding: "16px 18px", borderRadius: 20, background: cur ? `${brand.colors.primary}33` : "#11131f", border: `4px solid ${on ? brand.colors.primary : "#2a2d3d"}`, transform: `scale(${cur ? 1 + 0.04 * sp : 1})`, opacity: on ? 1 : 0.45 }}>
+                  <div style={{ width: 46, height: 46, borderRadius: "50%", background: on ? brand.colors.positive : "#2a2d3d", color: "#0b0d16", fontWeight: 900, fontSize: 28, display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>{i < active ? "\u2713" : i + 1}</div>
+                  <div style={{ fontWeight: 800, fontSize: 36, lineHeight: 1.1 }}>{st}</div>
+                </div>
+              );
+            })}
+          </div>
+        </div>,
+      );
+    }
     case "creator": {
       const initials = brand.name.split(/\s+/).map((w) => w[0]).join("").slice(0, 2).toUpperCase();
       return wrap(

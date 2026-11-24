@@ -16,6 +16,6 @@ export const fadeOut = (frame: number, fps: number, total: number, dur = 0.12) =
   interpolate(frame, [total - dur * fps, total], [1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
 
 export const fmtMoney = (n: number) => {
-  const s = Math.round(n).toString().padStart(7, "0");
+  const s = Math.round(n).toString();
   return s.replace(/\B(?=(\d{3})+(?!\d))/g, " ");
 };

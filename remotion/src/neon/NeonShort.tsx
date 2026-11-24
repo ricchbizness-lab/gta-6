@@ -51,8 +51,11 @@ const NeonTitle: React.FC<{ brand: Brand; text: string; localFrame: number }> = 
   const n = Math.ceil(interpolate(localFrame, [0, 0.35 * fps], [0, text.length], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }));
   const c = brand.colors.primary;
   const big = brand.fonts.title === "bebas";
+  // Une seule ligne : la taille baisse pour les titres longs (2 lignes chevauchaient les cartes)
+  const base = big ? 150 : 118;
+  const size = Math.round(base * Math.min(1, (big ? 22 : 18) / Math.max(1, text.length)));
   return (
-    <div style={{ fontFamily: TITLE_FONTS[brand.fonts.title], fontSize: big ? 150 : 118, lineHeight: 1.08, color: "#fff", textAlign: "center", maxWidth: 940, whiteSpace: "pre-wrap", WebkitTextStroke: `3px ${c}`, textShadow: `0 0 8px ${c}, 0 0 22px ${c}, 0 0 44px ${c}aa, 0 6px 0 rgba(0,0,0,0.35)` }}>
+    <div style={{ fontFamily: TITLE_FONTS[brand.fonts.title], fontSize: size, lineHeight: 1.08, color: "#fff", textAlign: "center", maxWidth: 1000, whiteSpace: "nowrap", WebkitTextStroke: `3px ${c}`, textShadow: `0 0 8px ${c}, 0 0 22px ${c}, 0 0 44px ${c}aa, 0 6px 0 rgba(0,0,0,0.35)` }}>
       {text.slice(0, n)}
     </div>
   );
