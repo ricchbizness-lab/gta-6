@@ -64,6 +64,16 @@ On reproduit les **codes** (rythme, structure, mise en page), jamais les assets 
 - `bash tools/neon/intro.sh <id>` : rend `out/neon/<id>_miniature.png` (couverture a uploader) et
   `out/neon/<id>_intro.mp4` (miniature 0,9 s -> flash blanc -> video). A lancer apres render.sh.
 
+## Miniatures "premium" (test du 25/11, a valider par l'humain)
+- `thumb.style` : `editorial` (DM Serif + italique, aligne a gauche), `cinema` (Oswald capitales espacees, filets),
+  `minimal` (Inter 900 serre). Couleur de marque = degrade violet->cyan sur UNE ligne, pas de halo neon.
+  Image sur les 2/3 du haut (une capture 16:9 en plein cadre vertical est trop zoomee).
+- Tester plusieurs variantes sans toucher au projet : `npx remotion still neon-<id>-thumb f.png --props=variante.json`.
+
+## Divers
+- Fonds : `backgrounds` accepte `{"image": "projects/<id>/img/x.jpg"}` (capture floutee) en plus de `{source, t}`.
+- `whisper_model: "medium"` si Whisper decroche sur la fin d'une voix acceleree (hallucination type "Sous-titrage ST'501").
+
 ## Zones (1080x1920, ne pas deplacer sans raison)
 Pastille partie y190-310 · titre neon y470-760 · carte y820 (badge y760), hauteur max ~550 ·
 sous-titres bas a y1490 (1-3 mots, mot a venir en transparence) · grille synthwave y1540-1920.

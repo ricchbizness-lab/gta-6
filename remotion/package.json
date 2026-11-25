@@ -10,8 +10,11 @@
   "private": true,
   "dependencies": {
     "@fontsource/bebas-neue": "^5.3.0",
+    "@fontsource/dm-serif-display": "^5.3.0",
+    "@fontsource/inter": "^5.3.0",
     "@fontsource/kaushan-script": "^5.3.0",
     "@fontsource/montserrat": "^5.3.0",
+    "@fontsource/oswald": "^5.3.0",
     "@fontsource/pacifico": "^5.3.0",
     "@remotion/captions": "^4.0.545",
     "@remotion/cli": "4.0.545",

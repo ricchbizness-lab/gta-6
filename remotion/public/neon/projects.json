@@ -784,5 +784,287 @@
     ]
    }
   }
+ },
+ {
+  "id": "neon-monument",
+  "props": {
+   "brand": {
+    "name": "satisfayingmeplease",
+    "tagline": "GTA 6 & gaming",
+    "tags": [
+     "GTA 6",
+     "ASTUCES"
+    ],
+    "chapterLabel": "PARTIE",
+    "colors": {
+     "primary": "#22D3EE",
+     "secondary": "#7C3AED",
+     "badge": "#FACC15",
+     "positive": "#4ADE80",
+     "negative": "#F43F5E",
+     "panel": "rgba(8,14,30,0.94)",
+     "text": "#FFFFFF",
+     "grid": "#22D3EE"
+    },
+    "fonts": {
+     "title": "pacifico",
+     "ui": "montserrat"
+    }
+   },
+   "scenes": [
+    {
+     "chapter": 0,
+     "title": "Personne ne sait",
+     "card": {
+      "type": "image",
+      "src": "neon/ext_monument/sunset.jpg",
+      "caption": "Image : Middle East Gamer"
+     },
+     "start": 0.0,
+     "end": 2.94
+    },
+    {
+     "title": "Manifest Canyon",
+     "card": {
+      "type": "stat",
+      "icon": "📍",
+      "label": "Manifest Canyon",
+      "sub": "Kelly County"
+     },
+     "chapter": 0,
+     "start": 2.94,
+     "end": 3.68
+    },
+    {
+     "title": "Le monument",
+     "card": {
+      "type": "checklist",
+      "title": "SUR PLACE",
+      "items": [
+       {
+        "label": "Un pilier blanc",
+        "state": "done"
+       },
+       {
+        "label": "Un globe",
+        "state": "done"
+       },
+       {
+        "label": "Quatre chevaux",
+        "state": "done"
+       }
+      ]
+     },
+     "chapter": 0,
+     "start": 3.68,
+     "end": 5.52
+    },
+    {
+     "chapter": 1,
+     "flash": true,
+     "title": "La plaque",
+     "card": {
+      "type": "badge",
+      "n": 1
+     },
+     "start": 5.52,
+     "end": 6.16
+    },
+    {
+     "title": "Construit en 1982",
+     "card": {
+      "type": "image",
+      "src": "neon/ext_monument/plaque_zoom.jpg",
+      "caption": "Image : Middle East Gamer"
+     },
+     "chapter": 1,
+     "start": 6.16,
+     "end": 9.68
+    },
+    {
+     "title": "Les 4 chevaux",
+     "card": {
+      "type": "checklist",
+      "title": "ILS REPRÉSENTENT",
+      "items": [
+       {
+        "label": "La faune",
+        "state": "done"
+       },
+       {
+        "label": "La corruption",
+        "state": "done"
+       },
+       {
+        "label": "L'humidité",
+        "state": "done"
+       },
+       {
+        "label": "Le yeyo",
+        "state": "done"
+       }
+      ]
+     },
+     "chapter": 1,
+     "start": 9.68,
+     "end": 12.46
+    },
+    {
+     "chapter": 2,
+     "flash": true,
+     "title": "Les symboles",
+     "card": {
+      "type": "badge",
+      "n": 2
+     },
+     "start": 12.46,
+     "end": 13.34
+    },
+    {
+     "title": "Sur chaque cheval",
+     "card": {
+      "type": "stat",
+      "icon": "🔣",
+      "label": "Des symboles",
+      "sub": "Sur la tête et le socle"
+     },
+     "chapter": 2,
+     "start": 13.34,
+     "end": 16.22
+    },
+    {
+     "title": "Un cône ?!",
+     "card": {
+      "type": "image",
+      "src": "neon/ext_monument/horse-traffic-cone.jpg",
+      "caption": "Image : Middle East Gamer"
+     },
+     "chapter": 2,
+     "start": 16.22,
+     "end": 17.82
+    },
+    {
+     "chapter": 3,
+     "flash": true,
+     "title": "Le morse",
+     "card": {
+      "type": "badge",
+      "n": 3
+     },
+     "start": 17.82,
+     "end": 19.16
+    },
+    {
+     "title": "La manette vibre",
+     "card": {
+      "type": "stat",
+      "icon": "🎮",
+      "label": "Vibrations",
+      "sub": "Et des bips en morse ?"
+     },
+     "chapter": 3,
+     "start": 19.16,
+     "end": 22.66
+    },
+    {
+     "title": "Une nuit d'orage",
+     "card": {
+      "type": "image",
+      "src": "neon/ext_monument/lightning-strike.jpg",
+      "caption": "Image : Middle East Gamer"
+     },
+     "chapter": 3,
+     "start": 22.66,
+     "end": 24.36
+    },
+    {
+     "title": "Toujours en feu",
+     "card": {
+      "type": "image",
+      "src": "neon/ext_monument/globe-burning.jpg",
+      "caption": "Image : Middle East Gamer"
+     },
+     "chapter": 3,
+     "start": 24.36,
+     "end": 25.58
+    },
+    {
+     "chapter": 0,
+     "title": "Blague ou mystère ?",
+     "card": {
+      "type": "choice",
+      "a": "BLAGUE",
+      "b": "MYSTÈRE"
+     },
+     "start": 25.58,
+     "end": 28.7
+    },
+    {
+     "title": "satisfayingmeplease",
+     "card": {
+      "type": "creator"
+     },
+     "chapter": 0,
+     "start": 28.7,
+     "end": 31.076
+    }
+   ],
+   "backgrounds": [
+    {
+     "src": "neon/monument/bg0.mp4",
+     "from": 0.0,
+     "to": 5.52
+    },
+    {
+     "src": "neon/monument/bg1.mp4",
+     "from": 5.52,
+     "to": 12.46
+    },
+    {
+     "src": "neon/monument/bg2.mp4",
+     "from": 12.46,
+     "to": 17.82
+    },
+    {
+     "src": "neon/monument/bg3.mp4",
+     "from": 17.82,
+     "to": 25.58
+    },
+    {
+     "src": "neon/monument/bg4.mp4",
+     "from": 25.58,
+     "to": 31.076
+    }
+   ],
+   "voice": "neon/monument/voice.wav",
+   "captions": "neon/monument/captions.json",
+   "sfx": true,
+   "durationInSeconds": 31.076,
+   "thumb": {
+    "image": "neon/ext_monument/lightning-strike.jpg",
+    "focus": "79% 50%",
+    "credit": "Image : Middle East Gamer",
+    "style": "editorial",
+    "kicker": "GTA 6 · MYSTÈRE",
+    "italic": [
+     1
+    ],
+    "lines": [
+     {
+      "text": "Le mystère",
+      "size": 158
+     },
+     {
+      "text": "que personne",
+      "color": "primary",
+      "size": 158
+     },
+     {
+      "text": "n'a résolu.",
+      "size": 158
+     }
+    ]
+   }
+  }
  }
 ]

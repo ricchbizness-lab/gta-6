@@ -15,3 +15,5 @@ remotion/public/kai/*.mp4
 remotion/public/neon/*/
 !remotion/public/neon/fonts/
 !remotion/public/neon/sfx/
+# images de tiers (captures d articles) : jamais commitees
+projects/*/img/

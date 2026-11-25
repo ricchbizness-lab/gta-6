@@ -69,4 +69,6 @@ export type Thumb = {
   lines: ThumbLine[];
   arrow?: boolean; // fleche rouge vers l'image
   credit?: string; // credit de l'image (petit, en bas de l'image)
+  style?: "neon" | "editorial" | "cinema" | "minimal"; // habillage (defaut neon)
+  italic?: number[]; // index des lignes en italique (style editorial)
 };

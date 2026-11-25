@@ -1,0 +1,239 @@
+{
+ "lang": "fr",
+ "target_wpm": 290,
+ "voice_text": "Il y a un monument dans GTA 6 que personne n'arrive à expliquer. Il est près de Manifest Canyon : un pilier blanc, un globe, et quatre chevaux. Un, la plaque. Construit en 1982, il célèbre la suprématie de Leonida. Les quatre chevaux représentent la faune, la corruption, l'humidité et le yeyo. Deux, les symboles. Chaque cheval a des symboles sur la tête et sur son socle, et l'un d'eux porte un cône de chantier. Trois, le morse. Un joueur dit que sa manette vibre près du monument, et qu'il émet des bips qui ressemblent à du morse. Et une nuit d'orage, un site a vu la foudre frapper le globe, qui est resté en feu. Alors, simple blague de Rockstar, ou vrai mystère ? Dis-le en commentaire, et abonne-toi pour plus de secrets de GTA 6.",
+ "backgrounds": [
+  {
+   "image": "projects/monument/img/sunset.jpg"
+  },
+  {
+   "image": "projects/monument/img/plaque.jpg"
+  },
+  {
+   "image": "projects/monument/img/horse-traffic-cone.jpg"
+  },
+  {
+   "image": "projects/monument/img/lightning-strike.jpg"
+  },
+  {
+   "image": "projects/monument/img/globe-burning.jpg"
+  }
+ ],
+ "scenes": [
+  {
+   "bg": 0,
+   "chapter": 0,
+   "title": "Personne ne sait",
+   "card": {
+    "type": "image",
+    "src": "neon/ext_monument/sunset.jpg",
+    "caption": "Image : Middle East Gamer"
+   }
+  },
+  {
+   "anchor": "manifest",
+   "title": "Manifest Canyon",
+   "card": {
+    "type": "stat",
+    "icon": "📍",
+    "label": "Manifest Canyon",
+    "sub": "Kelly County"
+   }
+  },
+  {
+   "anchor": "un pilier",
+   "title": "Le monument",
+   "card": {
+    "type": "checklist",
+    "title": "SUR PLACE",
+    "items": [
+     {
+      "label": "Un pilier blanc",
+      "state": "done"
+     },
+     {
+      "label": "Un globe",
+      "state": "done"
+     },
+     {
+      "label": "Quatre chevaux",
+      "state": "done"
+     }
+    ]
+   }
+  },
+  {
+   "anchor": "la plaque",
+   "bg": 1,
+   "chapter": 1,
+   "flash": true,
+   "title": "La plaque",
+   "card": {
+    "type": "badge",
+    "n": 1
+   }
+  },
+  {
+   "anchor": "construit",
+   "title": "Construit en 1982",
+   "card": {
+    "type": "image",
+    "src": "neon/ext_monument/plaque_zoom.jpg",
+    "caption": "Image : Middle East Gamer"
+   }
+  },
+  {
+   "anchor": "representent",
+   "title": "Les 4 chevaux",
+   "card": {
+    "type": "checklist",
+    "title": "ILS REPRÉSENTENT",
+    "items": [
+     {
+      "label": "La faune",
+      "state": "done"
+     },
+     {
+      "label": "La corruption",
+      "state": "done"
+     },
+     {
+      "label": "L'humidité",
+      "state": "done"
+     },
+     {
+      "label": "Le yeyo",
+      "state": "done"
+     }
+    ]
+   }
+  },
+  {
+   "anchor": "les symboles",
+   "bg": 2,
+   "chapter": 2,
+   "flash": true,
+   "title": "Les symboles",
+   "card": {
+    "type": "badge",
+    "n": 2
+   }
+  },
+  {
+   "anchor": "chaque cheval",
+   "title": "Sur chaque cheval",
+   "card": {
+    "type": "stat",
+    "icon": "🔣",
+    "label": "Des symboles",
+    "sub": "Sur la tête et le socle"
+   }
+  },
+  {
+   "anchor": "cone",
+   "title": "Un cône ?!",
+   "card": {
+    "type": "image",
+    "src": "neon/ext_monument/horse-traffic-cone.jpg",
+    "caption": "Image : Middle East Gamer"
+   }
+  },
+  {
+   "anchor": "le morse",
+   "bg": 3,
+   "chapter": 3,
+   "flash": true,
+   "title": "Le morse",
+   "card": {
+    "type": "badge",
+    "n": 3
+   }
+  },
+  {
+   "anchor": "sa manette",
+   "title": "La manette vibre",
+   "card": {
+    "type": "stat",
+    "icon": "🎮",
+    "label": "Vibrations",
+    "sub": "Et des bips en morse ?"
+   }
+  },
+  {
+   "anchor": "nuit d'orage",
+   "title": "Une nuit d'orage",
+   "card": {
+    "type": "image",
+    "src": "neon/ext_monument/lightning-strike.jpg",
+    "caption": "Image : Middle East Gamer"
+   }
+  },
+  {
+   "anchor": "le globe",
+   "title": "Toujours en feu",
+   "card": {
+    "type": "image",
+    "src": "neon/ext_monument/globe-burning.jpg",
+    "caption": "Image : Middle East Gamer"
+   }
+  },
+  {
+   "anchor": "alors",
+   "bg": 4,
+   "chapter": 0,
+   "title": "Blague ou mystère ?",
+   "card": {
+    "type": "choice",
+    "a": "BLAGUE",
+    "b": "MYSTÈRE"
+   }
+  },
+  {
+   "anchor": "abonne",
+   "title": "satisfayingmeplease",
+   "card": {
+    "type": "creator"
+   }
+  }
+ ],
+ "caption_fixes": [
+  [
+   "GTA VI",
+   "GTA 6"
+  ],
+  [
+   "bipes",
+   "bips"
+  ],
+  [
+   "prêt de",
+   "près de"
+  ]
+ ],
+ "thumb": {
+  "image": "neon/ext_monument/lightning-strike.jpg",
+  "focus": "79% 50%",
+  "credit": "Image : Middle East Gamer",
+  "style": "editorial",
+  "kicker": "GTA 6 · MYSTÈRE",
+  "italic": [
+   1
+  ],
+  "lines": [
+   {
+    "text": "Le mystère",
+    "size": 158
+   },
+   {
+    "text": "que personne",
+    "color": "primary",
+    "size": 158
+   },
+   {
+    "text": "n'a résolu.",
+    "size": 158
+   }
+  ]
+ },
+ "whisper_model": "medium"
+}

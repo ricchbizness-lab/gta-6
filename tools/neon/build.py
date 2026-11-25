@@ -30,9 +30,9 @@ def duration(p):
     return float(run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "default=nw=1:nk=1", p]))
 
 
-def transcribe(audio, out, lang):
+def transcribe(audio, out, lang, model="small"):
     run([sys.executable, "-I", ROOT / "clip_pipeline.py", "transcribe", audio, "--out", out,
-         "--model", "small", "--lang", lang, "--device", "cpu", "--compute", "int8"])
+         "--model", model, "--lang", lang, "--device", "cpu", "--compute", "int8"])
     segs = json.loads((out / "transcript.json").read_text())
     return [w for s in segs for w in s["words"] if w["w"]]
 
@@ -83,7 +83,7 @@ def main(pid):
     print(f"voix : {wpm:.0f} mots/min -> x{tempo:.3f} -> ~{wpm*tempo:.0f} mots/min")
 
     # 2) mots horodates de la voix finale
-    raw_words = transcribe(voice, work / "final", lang)
+    raw_words = transcribe(voice, work / "final", lang, script.get("whisper_model", "small"))
     items = [{"w": w["w"], "s": w["start"] * 1000, "e": max(w["end"], w["start"] + 0.07) * 1000} for w in raw_words]
     items = apply_fixes(bmd.merge_elisions(items), script.get("caption_fixes", []))
     words = [{"w": it["w"], "start": it["s"] / 1000, "end": it["e"] / 1000} for it in items]
@@ -138,7 +138,10 @@ def main(pid):
         src = script["backgrounds"][g["idx"]]
         dst = pub / f"bg{k}.mp4"
         d = g["to"] - g["from"] + 0.2
-        run(["ffmpeg", "-y", "-nostdin", "-ss", src["t"], "-i", ROOT / src["source"], "-t", f"{d:.3f}", "-an",
+        # source video (+ t) ou image fixe (fond flou d'une capture d'article)
+        inp = (["-loop", "1", "-framerate", "30", "-i", ROOT / src["image"]] if "image" in src
+               else ["-ss", src["t"], "-i", ROOT / src["source"]])
+        run(["ffmpeg", "-y", "-nostdin", *inp, "-t", f"{d:.3f}", "-an",
              "-vf", "scale=-2:1920,crop=1080:1920,gblur=sigma=26,eq=brightness=-0.10:saturation=1.15,fps=30",
              "-c:v", "libx264", "-crf", "22", "-preset", "veryfast", "-pix_fmt", "yuv420p", dst])
         backgrounds.append({"src": f"neon/{pid}/{dst.name}", "from": round(g["from"], 3), "to": round(g["to"], 3)})
