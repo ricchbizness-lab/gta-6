@@ -75,6 +75,8 @@ On reproduit les **codes** (rythme, structure, mise en page), jamais les assets 
   `mission` (Oswald centre, etoiles de recherche, minimap avec repere `?`, ligne `objective` facon HUD, `*mot*` surligne),
   `postcard` (DM Serif, tirage photo a bord blanc "Souvenir de Leonida", timbre `stamp` + tampon),
   `gps` (Inter 900, notification tel `notif:{app,text}`, repere `pin:{x,y,label}` + route pointillee).
+- Miniature SANS mention de credit (retour humain 26/11) : ne pas mettre `thumb.credit`. Le credit reste dans la video.
+- `gps` (notif telephone) valide par l'humain : a reutiliser sur une prochaine video.
 - Les styles editorial/cinema/minimal restent dispo mais ont ete juges "hors theme jeu".
 
 ## Transitions (26/11, retour humain : le whoosh bruit blanc etait trop fort)
