@@ -13,7 +13,7 @@ On reproduit les **codes** (rythme, structure, mise en page), jamais les assets 
 - `remotion/src/neon/` : gabarit (types.ts, NeonShort.tsx, Cards.tsx, anim.ts, fonts.ts). Composition `neon-<id>`.
 - `tools/neon/build.py <id>` : voix -> transcription -> calage des scenes -> fonds -> props + `remotion/public/neon/projects.json`.
 - `tools/neon/render.sh <id>` : rendu Remotion + normalisation -14 LUFS -> `out/neon/<id>.mp4`.
-- `tools/neon/make_sfx.py` : regenere pop/impact/whoosh (deja dans `remotion/public/neon/sfx/`).
+- `tools/neon/make_sfx.py` : regenere pop/impact/whoosh/trans_air/trans_synth (deja dans `remotion/public/neon/sfx/`).
 - Exemple complet : `projects/vicebeach/` (brand.json + script.json + voice_raw.wav).
 
 ## Procedure
@@ -69,6 +69,18 @@ On reproduit les **codes** (rythme, structure, mise en page), jamais les assets 
   `minimal` (Inter 900 serre). Couleur de marque = degrade violet->cyan sur UNE ligne, pas de halo neon.
   Image sur les 2/3 du haut (une capture 16:9 en plein cadre vertical est trop zoomee).
 - Tester plusieurs variantes sans toucher au projet : `npx remotion still neon-<id>-thumb f.png --props=variante.json`.
+
+## Miniatures "jeu video" (26/11, retour humain : rester dans le theme du jeu)
+- Meme typo premium, habillage emprunte au jeu (generique, jamais de logo ni police Rockstar) :
+  `mission` (Oswald centre, etoiles de recherche, minimap avec repere `?`, ligne `objective` facon HUD, `*mot*` surligne),
+  `postcard` (DM Serif, tirage photo a bord blanc "Souvenir de Leonida", timbre `stamp` + tampon),
+  `gps` (Inter 900, notification tel `notif:{app,text}`, repere `pin:{x,y,label}` + route pointillee).
+- Les styles editorial/cinema/minimal restent dispo mais ont ete juges "hors theme jeu".
+
+## Transitions (26/11, retour humain : le whoosh bruit blanc etait trop fort)
+- `script.json` -> `transition` : `air` (defaut, souffle feutre < 3,5 kHz), `synth` (nappe tonale + sub), `whoosh` (ancien).
+- Sur une scene `flash`, seul le son de transition joue (plus d'impact empile). Flash = voile couleur de marque
+  radial (max 45 %), plus de trame blanche. Cible : transition ~8-10 dB sous la voix.
 
 ## Divers
 - Fonds : `backgrounds` accepte `{"image": "projects/<id>/img/x.jpg"}` (capture floutee) en plus de `{source, t}`.

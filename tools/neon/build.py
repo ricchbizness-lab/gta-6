@@ -153,7 +153,7 @@ def main(pid):
 
     # 7) props + registre des compositions
     props = {"brand": brand, "scenes": scenes, "backgrounds": backgrounds, "voice": f"neon/{pid}/voice.wav",
-             "captions": f"neon/{pid}/captions.json", "sfx": script.get("sfx", True), "durationInSeconds": total}
+             "captions": f"neon/{pid}/captions.json", "sfx": script.get("sfx", True), "transition": script.get("transition", "air"), "durationInSeconds": total}
     if script.get("thumb"):
         props["thumb"] = script["thumb"]
     if script.get("music"):

@@ -235,5 +235,6 @@
    }
   ]
  },
- "whisper_model": "medium"
+ "whisper_model": "medium",
+ "transition": "air"
 }

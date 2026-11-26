@@ -110,15 +110,14 @@ const SceneView: React.FC<{ brand: Brand; scene: Scene }> = ({ brand, scene }) =
   );
 };
 
-// --- Flash de transition (3 images : blanc puis couleur) --------------------------------
+// Flash adouci (26/11) : plus de trame blanche pure, voile couleur de marque qui monte et retombe.
 const Flash: React.FC<{ color: string }> = ({ color }) => {
   const frame = useCurrentFrame();
-  const c = frame < 1 ? "#ffffff" : color;
-  const o = interpolate(frame, [0, 4], [1, 0], { extrapolateRight: "clamp" });
-  return <AbsoluteFill style={{ background: c, opacity: o }} />;
+  const o = interpolate(frame, [0, 1, 6], [0.25, 0.45, 0], { extrapolateRight: "clamp" });
+  return <AbsoluteFill style={{ background: `radial-gradient(ellipse at 50% 45%, ${color} 0%, rgba(0,0,0,0) 75%)`, opacity: o }} />;
 };
 
-export const NeonShort: React.FC<NeonProps> = ({ brand, scenes, backgrounds, voice, captions, music, musicVolume = 0.18, sfx }) => {
+export const NeonShort: React.FC<NeonProps> = ({ brand, scenes, backgrounds, voice, captions, music, musicVolume = 0.18, sfx, transition = "air" }) => {
   const { fps } = useVideoConfig();
   const frame = useCurrentFrame();
   const t = frame / fps;
@@ -145,11 +144,11 @@ export const NeonShort: React.FC<NeonProps> = ({ brand, scenes, backgrounds, voi
       {scenes.map((s, i) => (
         <Sequence key={i} from={F(s.start)} durationInFrames={Math.max(1, F(s.end - s.start))}>
           <SceneView brand={brand} scene={s} />
-          {sfx && s.card && <Audio src={staticFile(s.card.type === "badge" ? "neon/sfx/impact.wav" : "neon/sfx/pop.wav")} volume={s.card.type === "badge" ? 0.9 : 0.45} />}
+          {sfx && s.card && !s.flash && <Audio src={staticFile(s.card.type === "badge" ? "neon/sfx/impact.wav" : "neon/sfx/pop.wav")} volume={s.card.type === "badge" ? 0.9 : 0.45} />}
           {s.flash && (
-            <Sequence durationInFrames={5}>
+            <Sequence durationInFrames={7}>
               <Flash color={brand.colors.primary} />
-              {sfx && <Audio src={staticFile("neon/sfx/whoosh.wav")} volume={0.6} />}
+              {sfx && <Audio src={staticFile(transition === "whoosh" ? "neon/sfx/whoosh.wav" : `neon/sfx/trans_${transition}.wav`)} volume={transition === "whoosh" ? 0.6 : transition === "synth" ? 0.8 : 0.22} />}
             </Sequence>
           )}
         </Sequence>

@@ -55,6 +55,7 @@ export type NeonProps = {
   music?: string;
   musicVolume?: number;
   sfx: boolean;
+  transition?: "air" | "synth" | "whoosh"; // son des transitions (defaut air ; whoosh = ancien bruit blanc)
   durationInSeconds: number;
   thumb?: Thumb;
 };
@@ -69,6 +70,10 @@ export type Thumb = {
   lines: ThumbLine[];
   arrow?: boolean; // fleche rouge vers l'image
   credit?: string; // credit de l'image (petit, en bas de l'image)
-  style?: "neon" | "editorial" | "cinema" | "minimal"; // habillage (defaut neon)
+  style?: "neon" | "editorial" | "cinema" | "minimal" | "mission" | "postcard" | "gps"; // habillage (defaut neon)
+  pin?: { x: number; y: number; label?: string }; // gps : repere pose sur l'image (px, cadre 1080x1260)
+  objective?: string; // mission : ligne d'objectif facon HUD (mot entre *etoiles* = surligne)
+  stamp?: string; // postcard : texte du timbre
+  notif?: { app: string; text: string }; // gps : notification telephone en haut
   italic?: number[]; // index des lignes en italique (style editorial)
 };

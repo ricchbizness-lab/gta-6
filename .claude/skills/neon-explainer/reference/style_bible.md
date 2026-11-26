@@ -3,7 +3,7 @@
 ## Rythme
 - Debit voix ~320 mots/min (tres rapide), pas de silence > 0,25 s.
 - Blocs de 5 a 17 s par partie ; un changement visuel toutes les 0,7 a 2 s.
-- Transitions : flash blanc/couleur 2-3 frames + whoosh aux debuts de partie.
+- Transitions : voile couleur de marque ~6 frames + souffle feutre (trans_air) aux debuts de partie, sous la voix.
 
 ## Son
 - -14,1 LUFS integre, LRA 1,9 LU (voix tres compressee, constante).
