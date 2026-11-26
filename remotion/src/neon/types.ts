@@ -74,6 +74,6 @@ export type Thumb = {
   pin?: { x: number; y: number; label?: string }; // gps : repere pose sur l'image (px, cadre 1080x1260)
   objective?: string; // mission : ligne d'objectif facon HUD (mot entre *etoiles* = surligne)
   stamp?: string; // postcard : texte du timbre
-  notif?: { app: string; text: string }; // gps : notification telephone en haut
+  notif?: { app: string; text: string; top?: number }; // gps : notification telephone en haut
   italic?: number[]; // index des lignes en italique (style editorial)
 };

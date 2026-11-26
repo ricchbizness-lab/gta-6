@@ -198,7 +198,7 @@ const GameThumb: React.FC<{ brand: Brand; thumb: Thumb }> = ({ brand, thumb }) =
         )}
       </>)}
       {st === "gps" && thumb.notif && (
-        <div style={{ position: "absolute", top: 120, left: 60, right: 60, display: "flex", gap: 22, alignItems: "center", padding: "22px 28px", borderRadius: 34, background: "rgba(20,20,30,0.72)", border: "1.5px solid rgba(255,255,255,0.18)", boxShadow: "0 16px 40px rgba(0,0,0,0.5)" }}>
+        <div style={{ position: "absolute", top: thumb.notif.top ?? 120, left: 60, right: 60, display: "flex", gap: 22, alignItems: "center", padding: "22px 28px", borderRadius: 34, background: "rgba(20,20,30,0.72)", border: "1.5px solid rgba(255,255,255,0.18)", boxShadow: "0 16px 40px rgba(0,0,0,0.5)" }}>
           <div style={{ width: 76, height: 76, borderRadius: 18, background: grad, flexShrink: 0 }} />
           <div style={{ fontFamily: INTER_FONT, color: "#fff" }}>
             <div style={{ fontWeight: 700, fontSize: 24, opacity: 0.7, letterSpacing: 1 }}>{thumb.notif.app.toUpperCase()} · maintenant</div>

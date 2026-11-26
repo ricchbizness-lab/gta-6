@@ -1062,5 +1062,251 @@
    },
    "transition": "air"
   }
+ },
+ {
+  "id": "neon-vault",
+  "props": {
+   "brand": {
+    "name": "satisfayingmeplease",
+    "tagline": "GTA 6 & gaming",
+    "tags": [
+     "GTA 6",
+     "ASTUCES"
+    ],
+    "chapterLabel": "PARTIE",
+    "colors": {
+     "primary": "#22D3EE",
+     "secondary": "#7C3AED",
+     "badge": "#FACC15",
+     "positive": "#4ADE80",
+     "negative": "#F43F5E",
+     "panel": "rgba(8,14,30,0.94)",
+     "text": "#FFFFFF",
+     "grid": "#22D3EE"
+    },
+    "fonts": {
+     "title": "pacifico",
+     "ui": "montserrat"
+    }
+   },
+   "scenes": [
+    {
+     "chapter": 0,
+     "title": "Radio secrète",
+     "card": {
+      "type": "image",
+      "src": "neon/ext_vault/crowd.jpg"
+     },
+     "start": 0.0,
+     "end": 4.14
+    },
+    {
+     "title": "The Vault",
+     "card": {
+      "type": "stat",
+      "icon": "🎧",
+      "label": "The Vault",
+      "sub": "Mix de DJ exclusifs"
+     },
+     "chapter": 0,
+     "start": 4.14,
+     "end": 7.12
+    },
+    {
+     "title": "Verrouillée",
+     "card": {
+      "type": "stat",
+      "icon": "🔒",
+      "label": "The Vault",
+      "sub": "Absente de tes radios",
+      "lock": true
+     },
+     "chapter": 0,
+     "start": 7.12,
+     "end": 9.8
+    },
+    {
+     "chapter": 1,
+     "flash": true,
+     "title": "Le club",
+     "card": {
+      "type": "badge",
+      "n": 1
+     },
+     "start": 9.8,
+     "end": 10.48
+    },
+    {
+     "title": "Sur ta carte",
+     "card": {
+      "type": "image",
+      "src": "neon/ext_vault/map.jpg"
+     },
+     "chapter": 1,
+     "start": 10.48,
+     "end": 13.28
+    },
+    {
+     "title": "Juste en face",
+     "card": {
+      "type": "image",
+      "src": "neon/ext_vault/entrance.jpg"
+     },
+     "chapter": 1,
+     "start": 13.28,
+     "end": 14.58
+    },
+    {
+     "chapter": 2,
+     "flash": true,
+     "title": "L'affiche",
+     "card": {
+      "type": "badge",
+      "n": 2
+     },
+     "start": 14.58,
+     "end": 16.36
+    },
+    {
+     "title": "Près des escaliers",
+     "card": {
+      "type": "image",
+      "src": "neon/ext_vault/stairs.jpg"
+     },
+     "chapter": 2,
+     "start": 16.36,
+     "end": 17.74
+    },
+    {
+     "title": "L'affiche rouge",
+     "card": {
+      "type": "image",
+      "src": "neon/ext_vault/poster.jpg"
+     },
+     "chapter": 2,
+     "start": 17.74,
+     "end": 19.2
+    },
+    {
+     "chapter": 3,
+     "flash": true,
+     "title": "Le scan",
+     "card": {
+      "type": "badge",
+      "n": 3
+     },
+     "start": 19.2,
+     "end": 20.16
+    },
+    {
+     "title": "Appli WAiNK",
+     "card": {
+      "type": "phone",
+      "app": "WAiNK",
+      "steps": [
+       "Sors ton téléphone",
+       "Ouvre WAiNK",
+       "Scanne l'affiche"
+      ]
+     },
+     "chapter": 3,
+     "start": 20.16,
+     "end": 22.34
+    },
+    {
+     "title": "Débloquée !",
+     "card": {
+      "type": "image",
+      "src": "neon/ext_vault/radio.jpg"
+     },
+     "chapter": 3,
+     "start": 22.34,
+     "end": 23.9
+    },
+    {
+     "chapter": 0,
+     "title": "Ton choix ?",
+     "card": {
+      "type": "choice",
+      "a": "CLASSIQUE",
+      "b": "THE VAULT"
+     },
+     "start": 23.9,
+     "end": 26.14
+    },
+    {
+     "title": "satisfayingmeplease",
+     "card": {
+      "type": "creator"
+     },
+     "chapter": 0,
+     "start": 26.14,
+     "end": 28.762
+    }
+   ],
+   "backgrounds": [
+    {
+     "src": "neon/vault/bg0.mp4",
+     "from": 0.0,
+     "to": 9.8
+    },
+    {
+     "src": "neon/vault/bg1.mp4",
+     "from": 9.8,
+     "to": 14.58
+    },
+    {
+     "src": "neon/vault/bg2.mp4",
+     "from": 14.58,
+     "to": 19.2
+    },
+    {
+     "src": "neon/vault/bg3.mp4",
+     "from": 19.2,
+     "to": 22.34
+    },
+    {
+     "src": "neon/vault/bg4.mp4",
+     "from": 22.34,
+     "to": 28.762
+    }
+   ],
+   "voice": "neon/vault/voice.wav",
+   "captions": "neon/vault/captions.json",
+   "sfx": true,
+   "transition": "air",
+   "durationInSeconds": 28.762,
+   "thumb": {
+    "style": "gps",
+    "image": "neon/ext_vault/thumb_image-672.png",
+    "focus": "63% 50%",
+    "kicker": "GTA 6 · RADIO SECRÈTE",
+    "lines": [
+     {
+      "text": "La radio",
+      "size": 132
+     },
+     {
+      "text": "cachée",
+      "color": "primary",
+      "size": 132
+     },
+     {
+      "text": "de Vice City",
+      "size": 132
+     }
+    ],
+    "pin": {
+     "x": 560,
+     "y": 330,
+     "label": "The Vault"
+    },
+    "notif": {
+     "app": "Message",
+     "text": "T'as débloqué la radio secrète ?? 🎧",
+     "top": 840
+    }
+   }
+  }
  }
 ]
