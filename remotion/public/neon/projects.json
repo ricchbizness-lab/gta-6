@@ -1044,26 +1044,27 @@
     "image": "neon/ext_monument/lightning-strike.jpg",
     "focus": "79% 50%",
     "credit": "Image : Middle East Gamer",
-    "style": "editorial",
-    "kicker": "GTA 6 · MYSTÈRE",
+    "style": "mission",
+    "kicker": "NOUVELLE MISSION",
     "italic": [
      1
     ],
     "lines": [
      {
       "text": "Le mystère",
-      "size": 158
+      "size": 150
      },
      {
       "text": "que personne",
       "color": "primary",
-      "size": 158
+      "size": 150
      },
      {
-      "text": "n'a résolu.",
-      "size": 158
+      "text": "n'a résolu",
+      "size": 150
      }
-    ]
+    ],
+    "objective": "Trouve le *monument foudroyé*."
    },
    "transition": "air"
   }
