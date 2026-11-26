@@ -817,8 +817,7 @@
      "title": "Personne ne sait",
      "card": {
       "type": "image",
-      "src": "neon/ext_monument/sunset.jpg",
-      "caption": "Image : Middle East Gamer"
+      "src": "neon/ext_monument/sunset.jpg"
      },
      "start": 0.0,
      "end": 2.94
@@ -874,8 +873,7 @@
      "title": "Construit en 1982",
      "card": {
       "type": "image",
-      "src": "neon/ext_monument/plaque_zoom.jpg",
-      "caption": "Image : Middle East Gamer"
+      "src": "neon/ext_monument/plaque_zoom.jpg"
      },
      "chapter": 1,
      "start": 6.16,
@@ -936,8 +934,7 @@
      "title": "Un cône ?!",
      "card": {
       "type": "image",
-      "src": "neon/ext_monument/horse-traffic-cone.jpg",
-      "caption": "Image : Middle East Gamer"
+      "src": "neon/ext_monument/horse-traffic-cone.jpg"
      },
      "chapter": 2,
      "start": 16.22,
@@ -970,8 +967,7 @@
      "title": "Une nuit d'orage",
      "card": {
       "type": "image",
-      "src": "neon/ext_monument/lightning-strike.jpg",
-      "caption": "Image : Middle East Gamer"
+      "src": "neon/ext_monument/lightning-strike.jpg"
      },
      "chapter": 3,
      "start": 22.66,
@@ -981,8 +977,7 @@
      "title": "Toujours en feu",
      "card": {
       "type": "image",
-      "src": "neon/ext_monument/globe-burning.jpg",
-      "caption": "Image : Middle East Gamer"
+      "src": "neon/ext_monument/globe-burning.jpg"
      },
      "chapter": 3,
      "start": 24.36,
