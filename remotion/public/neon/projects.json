@@ -1308,5 +1308,497 @@
     }
    }
   }
+ },
+ {
+  "id": "neon-ovni",
+  "props": {
+   "brand": {
+    "name": "satisfayingmeplease",
+    "tagline": "GTA 6 & gaming",
+    "tags": [
+     "GTA 6",
+     "ASTUCES"
+    ],
+    "chapterLabel": "PARTIE",
+    "colors": {
+     "primary": "#22D3EE",
+     "secondary": "#7C3AED",
+     "badge": "#FACC15",
+     "positive": "#4ADE80",
+     "negative": "#F43F5E",
+     "panel": "rgba(8,14,30,0.94)",
+     "text": "#FFFFFF",
+     "grid": "#22D3EE"
+    },
+    "fonts": {
+     "title": "pacifico",
+     "ui": "montserrat"
+    }
+   },
+   "scenes": [
+    {
+     "chapter": 0,
+     "title": "Un OVNI",
+     "card": {
+      "type": "image",
+      "src": "neon/ext_ovni/beam.jpg"
+     },
+     "start": 0.0,
+     "end": 3.9
+    },
+    {
+     "title": "Trophée caché",
+     "card": {
+      "type": "stat",
+      "icon": "🏆",
+      "label": "The Truth Is Out There",
+      "sub": "Trophée caché",
+      "lock": true
+     },
+     "chapter": 0,
+     "start": 3.9,
+     "end": 5.24
+    },
+    {
+     "chapter": 1,
+     "flash": true,
+     "title": "Où aller",
+     "card": {
+      "type": "badge",
+      "n": 1
+     },
+     "start": 5.24,
+     "end": 6.34
+    },
+    {
+     "title": "Kelly County",
+     "card": {
+      "type": "image",
+      "src": "neon/ext_ovni/map.jpg"
+     },
+     "chapter": 1,
+     "start": 6.34,
+     "end": 10.22
+    },
+    {
+     "title": "Chapitre 2",
+     "card": {
+      "type": "stat",
+      "icon": "🔓",
+      "label": "Chapitre 2",
+      "sub": "Débloqué obligatoire"
+     },
+     "chapter": 1,
+     "start": 10.22,
+     "end": 11.7
+    },
+    {
+     "chapter": 2,
+     "flash": true,
+     "title": "L'heure",
+     "card": {
+      "type": "badge",
+      "n": 2
+     },
+     "start": 11.7,
+     "end": 12.96
+    },
+    {
+     "title": "Après 2 h",
+     "card": {
+      "type": "stat",
+      "icon": "🌙",
+      "label": "02:00",
+      "sub": "En pleine nuit"
+     },
+     "chapter": 2,
+     "start": 12.96,
+     "end": 14.52
+    },
+    {
+     "title": "La voiture",
+     "card": {
+      "type": "image",
+      "src": "neon/ext_ovni/car.jpg"
+     },
+     "chapter": 2,
+     "start": 14.52,
+     "end": 16.7
+    },
+    {
+     "title": "Suis la lumière",
+     "card": {
+      "type": "image",
+      "src": "neon/ext_ovni/woods.jpg"
+     },
+     "chapter": 2,
+     "start": 16.7,
+     "end": 18.12
+    },
+    {
+     "chapter": 3,
+     "flash": true,
+     "title": "L'enlèvement",
+     "card": {
+      "type": "badge",
+      "n": 3
+     },
+     "start": 18.12,
+     "end": 19.28
+    },
+    {
+     "title": "L'OVNI",
+     "card": {
+      "type": "image",
+      "src": "neon/ext_ovni/beam2.jpg"
+     },
+     "chapter": 3,
+     "start": 19.28,
+     "end": 20.3
+    },
+    {
+     "title": "Aide-la",
+     "card": {
+      "type": "image",
+      "src": "neon/ext_ovni/help.jpg"
+     },
+     "chapter": 3,
+     "start": 20.3,
+     "end": 22.32
+    },
+    {
+     "title": "Enlevé !",
+     "card": {
+      "type": "image",
+      "src": "neon/ext_ovni/abducted.jpg"
+     },
+     "chapter": 3,
+     "start": 22.32,
+     "end": 23.26
+    },
+    {
+     "title": "Trophée !",
+     "card": {
+      "type": "image",
+      "src": "neon/ext_ovni/trophy.jpg"
+     },
+     "chapter": 3,
+     "start": 23.26,
+     "end": 25.22
+    },
+    {
+     "chapter": 0,
+     "title": "Tu y crois ?",
+     "card": {
+      "type": "choice",
+      "a": "J'Y CROIS",
+      "b": "FAKE"
+     },
+     "start": 25.22,
+     "end": 28.72
+    },
+    {
+     "title": "satisfayingmeplease",
+     "card": {
+      "type": "creator"
+     },
+     "chapter": 0,
+     "start": 28.72,
+     "end": 31.239
+    }
+   ],
+   "backgrounds": [
+    {
+     "src": "neon/ovni/bg0.mp4",
+     "from": 0.0,
+     "to": 5.24
+    },
+    {
+     "src": "neon/ovni/bg1.mp4",
+     "from": 5.24,
+     "to": 11.7
+    },
+    {
+     "src": "neon/ovni/bg2.mp4",
+     "from": 11.7,
+     "to": 16.7
+    },
+    {
+     "src": "neon/ovni/bg3.mp4",
+     "from": 16.7,
+     "to": 18.12
+    },
+    {
+     "src": "neon/ovni/bg4.mp4",
+     "from": 18.12,
+     "to": 31.239
+    }
+   ],
+   "voice": "neon/ovni/voice.wav",
+   "captions": "neon/ovni/captions.json",
+   "sfx": true,
+   "transition": "air",
+   "durationInSeconds": 31.239,
+   "thumb": {
+    "style": "mission",
+    "image": "neon/ext_ovni/thumb.jpg",
+    "focus": "55% 50%",
+    "kicker": "NOUVELLE MISSION",
+    "lines": [
+     {
+      "text": "Un OVNI",
+      "size": 160
+     },
+     {
+      "text": "t'enlève",
+      "color": "primary",
+      "size": 160
+     },
+     {
+      "text": "dans GTA 6",
+      "size": 160
+     }
+    ],
+    "objective": "Trouve-le *après 2 h du matin*."
+   }
+  }
+ },
+ {
+  "id": "neon-chapeau",
+  "props": {
+   "brand": {
+    "name": "satisfayingmeplease",
+    "tagline": "GTA 6 & gaming",
+    "tags": [
+     "GTA 6",
+     "ASTUCES"
+    ],
+    "chapterLabel": "PARTIE",
+    "colors": {
+     "primary": "#22D3EE",
+     "secondary": "#7C3AED",
+     "badge": "#FACC15",
+     "positive": "#4ADE80",
+     "negative": "#F43F5E",
+     "panel": "rgba(8,14,30,0.94)",
+     "text": "#FFFFFF",
+     "grid": "#22D3EE"
+    },
+    "fonts": {
+     "title": "pacifico",
+     "ui": "montserrat"
+    }
+   },
+   "scenes": [
+    {
+     "chapter": 0,
+     "title": "Le chapeau d'Arthur",
+     "card": {
+      "type": "image",
+      "src": "neon/ext_chapeau/yard.jpg"
+     },
+     "start": 0.0,
+     "end": 3.2
+    },
+    {
+     "title": "Red Dead 2",
+     "card": {
+      "type": "stat",
+      "icon": "🤠",
+      "label": "Arthur Morgan",
+      "sub": "Red Dead Redemption 2"
+     },
+     "chapter": 0,
+     "start": 3.2,
+     "end": 5.2
+    },
+    {
+     "chapter": 1,
+     "flash": true,
+     "title": "Où aller",
+     "card": {
+      "type": "badge",
+      "n": 1
+     },
+     "start": 5.2,
+     "end": 6.44
+    },
+    {
+     "title": "Port Gellhorn",
+     "card": {
+      "type": "image",
+      "src": "neon/ext_chapeau/map.jpg"
+     },
+     "chapter": 1,
+     "start": 6.44,
+     "end": 8.08
+    },
+    {
+     "title": "Les ballons",
+     "card": {
+      "type": "image",
+      "src": "neon/ext_chapeau/street.jpg"
+     },
+     "chapter": 1,
+     "start": 8.08,
+     "end": 10.6
+    },
+    {
+     "chapter": 2,
+     "flash": true,
+     "title": "Le chapeau",
+     "card": {
+      "type": "badge",
+      "n": 2
+     },
+     "start": 10.6,
+     "end": 11.92
+    },
+    {
+     "title": "Le canapé",
+     "card": {
+      "type": "image",
+      "src": "neon/ext_chapeau/yard.jpg"
+     },
+     "chapter": 2,
+     "start": 11.92,
+     "end": 14.84
+    },
+    {
+     "title": "Cowboy Hat",
+     "card": {
+      "type": "image",
+      "src": "neon/ext_chapeau/couch.jpg"
+     },
+     "chapter": 2,
+     "start": 14.84,
+     "end": 16.12
+    },
+    {
+     "chapter": 3,
+     "flash": true,
+     "title": "Le prix",
+     "card": {
+      "type": "badge",
+      "n": 3
+     },
+     "start": 16.12,
+     "end": 17.38
+    },
+    {
+     "title": "Essaie-le",
+     "card": {
+      "type": "stat",
+      "icon": "🎮",
+      "label": "Triangle / Y",
+      "sub": "Pour l'essayer"
+     },
+     "chapter": 3,
+     "start": 17.38,
+     "end": 19.34
+    },
+    {
+     "title": "35 $",
+     "card": {
+      "type": "stat",
+      "icon": "💵",
+      "label": "35 $",
+      "sub": "Et il est à toi"
+     },
+     "chapter": 3,
+     "start": 19.34,
+     "end": 21.22
+    },
+    {
+     "title": "Le même nœud",
+     "card": {
+      "type": "stat",
+      "icon": "🪢",
+      "label": "Même nœud",
+      "sub": "Que celui d'Arthur"
+     },
+     "chapter": 3,
+     "start": 21.22,
+     "end": 23.82
+    },
+    {
+     "chapter": 0,
+     "title": "Ton avis ?",
+     "card": {
+      "type": "choice",
+      "a": "COWBOY",
+      "b": "RED DEAD"
+     },
+     "start": 23.82,
+     "end": 27.14
+    },
+    {
+     "title": "satisfayingmeplease",
+     "card": {
+      "type": "creator"
+     },
+     "chapter": 0,
+     "start": 27.14,
+     "end": 29.476
+    }
+   ],
+   "backgrounds": [
+    {
+     "src": "neon/chapeau/bg0.mp4",
+     "from": 0.0,
+     "to": 5.2
+    },
+    {
+     "src": "neon/chapeau/bg1.mp4",
+     "from": 5.2,
+     "to": 8.08
+    },
+    {
+     "src": "neon/chapeau/bg2.mp4",
+     "from": 8.08,
+     "to": 10.6
+    },
+    {
+     "src": "neon/chapeau/bg3.mp4",
+     "from": 10.6,
+     "to": 16.12
+    },
+    {
+     "src": "neon/chapeau/bg4.mp4",
+     "from": 16.12,
+     "to": 29.476
+    }
+   ],
+   "voice": "neon/chapeau/voice.wav",
+   "captions": "neon/chapeau/captions.json",
+   "sfx": true,
+   "transition": "air",
+   "durationInSeconds": 29.476,
+   "thumb": {
+    "style": "postcard",
+    "image": "neon/ext_chapeau/thumb.jpg",
+    "focus": "40% 50%",
+    "kicker": "Souvenir de Port Gellhorn",
+    "stamp": "LEONIDA",
+    "italic": [
+     1
+    ],
+    "lines": [
+     {
+      "text": "Le chapeau",
+      "size": 138
+     },
+     {
+      "text": "d'Arthur Morgan",
+      "color": "primary",
+      "size": 120
+     },
+     {
+      "text": "est dans GTA 6.",
+      "size": 138
+     }
+    ]
+   }
+  }
  }
 ]

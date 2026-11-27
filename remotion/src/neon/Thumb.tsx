@@ -157,7 +157,7 @@ const GameThumb: React.FC<{ brand: Brand; thumb: Thumb }> = ({ brand, thumb }) =
         </div>
         <svg width="200" height="200" viewBox="0 0 100 100" style={{ position: "absolute", right: 40, top: 300, opacity: 0.5, transform: "rotate(-14deg)" }}>
           <circle cx="50" cy="50" r="44" fill="none" stroke="#fff" strokeWidth="2.5" /><circle cx="50" cy="50" r="34" fill="none" stroke="#fff" strokeWidth="1.5" />
-          <text x="50" y="47" textAnchor="middle" fontFamily={INTER_FONT} fontWeight="800" fontSize="11" fill="#fff" letterSpacing="1">VICE CITY</text>
+          <text x="50" y="47" textAnchor="middle" fontFamily={INTER_FONT} fontWeight="800" fontSize="11" fill="#fff" letterSpacing="1">LEONIDA</text>
           <text x="50" y="62" textAnchor="middle" fontFamily={INTER_FONT} fontWeight="600" fontSize="8" fill="#fff">GTA 6</text>
         </svg>
         <AbsoluteFill style={{ justifyContent: "flex-end", alignItems: "flex-start", padding: "0 80px 330px" }}>{lines}{handle}</AbsoluteFill>

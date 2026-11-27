@@ -1,0 +1,226 @@
+{
+ "lang": "fr",
+ "target_wpm": 290,
+ "whisper_model": "medium",
+ "transition": "air",
+ "voice_text": "Le chapeau d'Arthur Morgan est caché dans GTA 6. Oui, le héros de Red Dead Redemption 2. Un, où aller. Direction Port Gellhorn. Cherche une maison avec des ballons accrochés devant : c'est un vide-grenier. Deux, le chapeau. Avance jusqu'au canapé, au fond du jardin. Il est posé là, sous le nom de Genuine Cowboy Hat. Trois, le prix. Appuie sur triangle, ou Y sur Xbox, pour l'essayer. Il coûte trente-cinq dollars, et il est à toi. La preuve : la corde est nouée exactement comme sur celui d'Arthur. Alors, simple chapeau de cowboy, ou vrai clin d'œil à Red Dead ? Dis-le en commentaire, et abonne-toi pour plus de secrets de GTA 6.",
+ "caption_fixes": [
+  [
+   "GTA VI",
+   "GTA 6"
+  ],
+  [
+   "1.",
+   "Un,"
+  ],
+  [
+   "2.",
+   "Deux,"
+  ],
+  [
+   "3.",
+   "Trois,"
+  ],
+  [
+   "35",
+   "trente-cinq"
+  ],
+  [
+   "Redemption Deux,",
+   "Redemption 2."
+  ],
+  [
+   "Cowboyat.",
+   "Cowboy Hat."
+  ],
+  [
+   "ouvre un",
+   "ou vrai"
+  ],
+  [
+   "vide grenier.",
+   "vide-grenier."
+  ],
+  [
+   "à Red Dead.",
+   "à Red Dead ?"
+  ],
+  [
+   "preuve ?",
+   "preuve :"
+  ]
+ ],
+ "backgrounds": [
+  {
+   "image": "projects/chapeau/img/yard.jpg"
+  },
+  {
+   "image": "projects/chapeau/img/map.jpg"
+  },
+  {
+   "image": "projects/chapeau/img/street.jpg"
+  },
+  {
+   "image": "projects/chapeau/img/couch.jpg"
+  }
+ ],
+ "scenes": [
+  {
+   "bg": 0,
+   "chapter": 0,
+   "title": "Le chapeau d'Arthur",
+   "card": {
+    "type": "image",
+    "src": "neon/ext_chapeau/yard.jpg"
+   }
+  },
+  {
+   "anchor": "le héros",
+   "title": "Red Dead 2",
+   "card": {
+    "type": "stat",
+    "icon": "🤠",
+    "label": "Arthur Morgan",
+    "sub": "Red Dead Redemption 2"
+   }
+  },
+  {
+   "anchor": "où aller",
+   "bg": 1,
+   "chapter": 1,
+   "flash": true,
+   "title": "Où aller",
+   "card": {
+    "type": "badge",
+    "n": 1
+   }
+  },
+  {
+   "anchor": "port gellhorn",
+   "title": "Port Gellhorn",
+   "card": {
+    "type": "image",
+    "src": "neon/ext_chapeau/map.jpg"
+   }
+  },
+  {
+   "anchor": "des ballons",
+   "bg": 2,
+   "title": "Les ballons",
+   "card": {
+    "type": "image",
+    "src": "neon/ext_chapeau/street.jpg"
+   }
+  },
+  {
+   "anchor": "le chapeau",
+   "bg": 3,
+   "chapter": 2,
+   "flash": true,
+   "title": "Le chapeau",
+   "card": {
+    "type": "badge",
+    "n": 2
+   }
+  },
+  {
+   "anchor": "canapé",
+   "title": "Le canapé",
+   "card": {
+    "type": "image",
+    "src": "neon/ext_chapeau/yard.jpg"
+   }
+  },
+  {
+   "anchor": "genuine",
+   "title": "Cowboy Hat",
+   "card": {
+    "type": "image",
+    "src": "neon/ext_chapeau/couch.jpg"
+   }
+  },
+  {
+   "anchor": "le prix",
+   "bg": 0,
+   "chapter": 3,
+   "flash": true,
+   "title": "Le prix",
+   "card": {
+    "type": "badge",
+    "n": 3
+   }
+  },
+  {
+   "anchor": "triangle",
+   "title": "Essaie-le",
+   "card": {
+    "type": "stat",
+    "icon": "🎮",
+    "label": "Triangle / Y",
+    "sub": "Pour l'essayer"
+   }
+  },
+  {
+   "anchor": "il coûte",
+   "title": "35 $",
+   "card": {
+    "type": "stat",
+    "icon": "💵",
+    "label": "35 $",
+    "sub": "Et il est à toi"
+   }
+  },
+  {
+   "anchor": "la preuve",
+   "title": "Le même nœud",
+   "card": {
+    "type": "stat",
+    "icon": "🪢",
+    "label": "Même nœud",
+    "sub": "Que celui d'Arthur"
+   }
+  },
+  {
+   "anchor": "alors",
+   "chapter": 0,
+   "title": "Ton avis ?",
+   "card": {
+    "type": "choice",
+    "a": "COWBOY",
+    "b": "RED DEAD"
+   }
+  },
+  {
+   "anchor": "abonne",
+   "title": "satisfayingmeplease",
+   "card": {
+    "type": "creator"
+   }
+  }
+ ],
+ "thumb": {
+  "style": "postcard",
+  "image": "neon/ext_chapeau/thumb.jpg",
+  "focus": "40% 50%",
+  "kicker": "Souvenir de Port Gellhorn",
+  "stamp": "LEONIDA",
+  "italic": [
+   1
+  ],
+  "lines": [
+   {
+    "text": "Le chapeau",
+    "size": 138
+   },
+   {
+    "text": "d'Arthur Morgan",
+    "color": "primary",
+    "size": 120
+   },
+   {
+    "text": "est dans GTA 6.",
+    "size": 138
+   }
+  ]
+ }
+}

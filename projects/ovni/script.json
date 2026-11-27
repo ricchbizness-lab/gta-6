@@ -1,0 +1,249 @@
+{
+ "lang": "fr",
+ "target_wpm": 290,
+ "whisper_model": "medium",
+ "transition": "air",
+ "voice_text": "Dans GTA 6, un OVNI enlève des gens en pleine nuit. Et si tu le trouves, tu débloques un trophée caché. Un, où aller. Kelly County, à l'est de Port Gellhorn, près du Starlet Motel. Il faut avoir débloqué le chapitre deux. Deux, l'heure. Viens après deux heures du matin. Cherche une voiture garée, portières ouvertes, feux qui clignotent. Suis la lumière dans les bois. Trois, l'enlèvement. Un OVNI est en train d'enlever quelqu'un. Aide cette personne, puis retourne à la voiture... et c'est toi qu'il emporte. Trophée débloqué : The Truth Is Out There. Alors, les aliens dans GTA 6, tu y crois ou pas ? Dis-le en commentaire, et abonne-toi pour plus de secrets de GTA 6.",
+ "caption_fixes": [
+  [
+   "GTA VI",
+   "GTA 6"
+  ],
+  [
+   "1.",
+   "Un,"
+  ],
+  [
+   "2.",
+   "Deux,"
+  ],
+  [
+   "3.",
+   "Trois,"
+  ],
+  [
+   "ovni",
+   "OVNI"
+  ],
+  [
+   "Canty",
+   "County,"
+  ],
+  [
+   "Port-Gelhorn,",
+   "Port Gellhorn,"
+  ],
+  [
+   "Port-Gelhorn",
+   "Port Gellhorn"
+  ],
+  [
+   "toi qui l'emporte.",
+   "toi qu'il emporte."
+  ],
+  [
+   "débloquée.",
+   "débloqué :"
+  ],
+  [
+   "Deux, Deux,",
+   "deux. Deux,"
+  ],
+  [
+   "portière ouverte,",
+   "portières ouvertes,"
+  ],
+  [
+   "feu qui clignote.",
+   "feux qui clignotent."
+  ]
+ ],
+ "backgrounds": [
+  {
+   "image": "projects/ovni/img/beam.jpg"
+  },
+  {
+   "image": "projects/ovni/img/map.jpg"
+  },
+  {
+   "image": "projects/ovni/img/car.jpg"
+  },
+  {
+   "image": "projects/ovni/img/woods.jpg"
+  },
+  {
+   "image": "projects/ovni/img/abducted.jpg"
+  }
+ ],
+ "scenes": [
+  {
+   "bg": 0,
+   "chapter": 0,
+   "title": "Un OVNI",
+   "card": {
+    "type": "image",
+    "src": "neon/ext_ovni/beam.jpg"
+   }
+  },
+  {
+   "anchor": "trophée caché",
+   "title": "Trophée caché",
+   "card": {
+    "type": "stat",
+    "icon": "🏆",
+    "label": "The Truth Is Out There",
+    "sub": "Trophée caché",
+    "lock": true
+   }
+  },
+  {
+   "anchor": "où aller",
+   "bg": 1,
+   "chapter": 1,
+   "flash": true,
+   "title": "Où aller",
+   "card": {
+    "type": "badge",
+    "n": 1
+   }
+  },
+  {
+   "anchor": "kelly",
+   "title": "Kelly County",
+   "card": {
+    "type": "image",
+    "src": "neon/ext_ovni/map.jpg"
+   }
+  },
+  {
+   "anchor": "chapitre deux",
+   "title": "Chapitre 2",
+   "card": {
+    "type": "stat",
+    "icon": "🔓",
+    "label": "Chapitre 2",
+    "sub": "Débloqué obligatoire"
+   }
+  },
+  {
+   "anchor": "l'heure",
+   "bg": 2,
+   "chapter": 2,
+   "flash": true,
+   "title": "L'heure",
+   "card": {
+    "type": "badge",
+    "n": 2
+   }
+  },
+  {
+   "anchor": "deux heures",
+   "title": "Après 2 h",
+   "card": {
+    "type": "stat",
+    "icon": "🌙",
+    "label": "02:00",
+    "sub": "En pleine nuit"
+   }
+  },
+  {
+   "anchor": "voiture garée",
+   "title": "La voiture",
+   "card": {
+    "type": "image",
+    "src": "neon/ext_ovni/car.jpg"
+   }
+  },
+  {
+   "anchor": "suis la",
+   "bg": 3,
+   "title": "Suis la lumière",
+   "card": {
+    "type": "image",
+    "src": "neon/ext_ovni/woods.jpg"
+   }
+  },
+  {
+   "anchor": "l'enlèvement",
+   "bg": 4,
+   "chapter": 3,
+   "flash": true,
+   "title": "L'enlèvement",
+   "card": {
+    "type": "badge",
+    "n": 3
+   }
+  },
+  {
+   "anchor": "en train",
+   "title": "L'OVNI",
+   "card": {
+    "type": "image",
+    "src": "neon/ext_ovni/beam2.jpg"
+   }
+  },
+  {
+   "anchor": "aide cette",
+   "title": "Aide-la",
+   "card": {
+    "type": "image",
+    "src": "neon/ext_ovni/help.jpg"
+   }
+  },
+  {
+   "anchor": "c'est toi",
+   "title": "Enlevé !",
+   "card": {
+    "type": "image",
+    "src": "neon/ext_ovni/abducted.jpg"
+   }
+  },
+  {
+   "anchor": "trophée débloqué",
+   "title": "Trophée !",
+   "card": {
+    "type": "image",
+    "src": "neon/ext_ovni/trophy.jpg"
+   }
+  },
+  {
+   "anchor": "alors",
+   "chapter": 0,
+   "title": "Tu y crois ?",
+   "card": {
+    "type": "choice",
+    "a": "J'Y CROIS",
+    "b": "FAKE"
+   }
+  },
+  {
+   "anchor": "abonne",
+   "title": "satisfayingmeplease",
+   "card": {
+    "type": "creator"
+   }
+  }
+ ],
+ "thumb": {
+  "style": "mission",
+  "image": "neon/ext_ovni/thumb.jpg",
+  "focus": "55% 50%",
+  "kicker": "NOUVELLE MISSION",
+  "lines": [
+   {
+    "text": "Un OVNI",
+    "size": 160
+   },
+   {
+    "text": "t'enlève",
+    "color": "primary",
+    "size": 160
+   },
+   {
+    "text": "dans GTA 6",
+    "size": 160
+   }
+  ],
+  "objective": "Trouve-le *après 2 h du matin*."
+ }
+}
